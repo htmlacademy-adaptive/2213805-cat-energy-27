@@ -1,0 +1,42 @@
+.main-nav {
+  width: 24px;
+  height: 16px;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+}
+.main-nav__toggle {
+  width: 24px;
+  height: 14px;
+  background-image: url(/source/img/images-mobile/open-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.main-nav__list {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #000000;
+  margin: o auto;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  justify-content: center;
+}

@@ -1,1 +1,13 @@
-// Начните писать стили здесь
+@import"blocks/page.scss";
+@import"blocks/main-header.scss";
+@import"blocks/main-nav.scss";
+@import"blocks/additional.scss";
+@import"blocks/advantages.scss";
+@import"blocks/advertisement.scss";
+@import"blocks/application-form.scss";
+@import"blocks/catalog.scss";
+@import"blocks/catalog-card.scss", "blocks/site-list.scss";
+@import"blocks/catalog-container.scss", "blocks/global.scss";
+@import"blocks/collaboration.scss", "fonts.scss";
+@import"blocks/copyright.scss", "blocks/experience.scss", "blocks/footer.scss", "blocks/gift.scss", "blocks/main-container.scss", "blocks/map.scss", "blocks/options.scss", "blocks/page.scss", "blocks/page-title.scss", "blocks/program.scss", "blocks/site-list.scss", "blocks/social.scss";
+@import"variables.scss";

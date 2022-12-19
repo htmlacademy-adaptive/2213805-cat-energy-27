@@ -1,0 +1,16 @@
+.site-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 320px;
+  height: 264px;
+  justify-items: center;
+}
+
+.site-list__item {
+  display: flex;
+  margin: o auto;
+  text-align: center;
+  text-transform: capitalize;
+  border-top: 1px solid rgba(230, 230, 230, 1);
+}

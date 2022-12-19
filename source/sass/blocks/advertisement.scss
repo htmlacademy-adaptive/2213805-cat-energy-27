@@ -1,0 +1,33 @@
+.advertisement {
+  height: 480px;
+}
+
+.advertisement__name {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.advertisement__slogan {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.advertisement__wrapper {
+  background-image: url("/source/img/images-mobile/catface-background.png");
+  background-color: rgba(104, 183, 56, 0.85);
+  background-repeat: no-repeat;
+  z-index: 1;
+ }
+
+ .advertisement__product {
+  padding-top: 167px;
+ }
+
+ .advertisement__link {
+  height: 40px;
+  width: 280px;
+ }
