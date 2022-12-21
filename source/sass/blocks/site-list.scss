@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 320px;
-  height: 264px;
   justify-items: center;
 }
 
@@ -11,6 +10,6 @@
   display: flex;
   margin: o auto;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   border-top: 1px solid rgba(230, 230, 230, 1);
 }

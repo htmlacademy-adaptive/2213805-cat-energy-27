@@ -1,4 +1,5 @@
 .advertisement {
+  display: flex;
   height: 480px;
 }
 
@@ -7,6 +8,9 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 4;
 }
 
 .advertisement__slogan {
@@ -14,17 +18,27 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  z-index: 4;
 }
 
+
 .advertisement__wrapper {
-  background-image: url("/source/img/images-mobile/catface-background.png");
-  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("/img/images-mobile/catface-background.png");
   background-repeat: no-repeat;
-  z-index: 1;
+  position: relative;
+ }
+
+ .advertisement__background {
+  position: absolute;
+  z-index: 3;
+  top: 0;
  }
 
  .advertisement__product {
-  padding-top: 167px;
+  margin-top: 167px;
  }
 
  .advertisement__link {

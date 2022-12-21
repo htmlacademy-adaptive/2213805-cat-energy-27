@@ -7,14 +7,21 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-items: center;
   justify-content: center;
+  visibility: hidden;
 }
+
 .main-nav__toggle {
   width: 24px;
   height: 14px;
-  background-image: url(/source/img/images-mobile/open-mobile.svg);
+  background-image: url("img/images-mobile/open-mobile.svg");
   background-repeat: no-repeat;
+  width: 24px;
+  height: 16px;
+  margin-top: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .main-nav__list {
