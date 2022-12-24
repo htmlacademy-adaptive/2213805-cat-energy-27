@@ -1,5 +1,4 @@
 .options {
-  margin: 20px;
   width: 100%;
 }
 
@@ -20,9 +19,6 @@
   word-break: break-word;
   position: relative;
   background-color: #f2f2f2;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: rgba(242, 242, 242, 1);
 }
 
@@ -32,6 +28,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  display: flex;
   margin-top: 30px;
   margin-left: 91px;
 }
@@ -42,16 +39,13 @@
   line-height: 18px;
   font-weight: 400;
   color: rgba(68, 68, 68, 1);
-  text-align: left;
+  display: flex;
+  text-align: start;
   padding: 29px 33px 23px 20px;
 }
 
-.options__program-description::after {
-  width: 240px;
-  height: 1px;
-  content: "";
-  background-color: rgba(217, 217, 217, 1);
-  margin-top: -23px;
+.options__program-item--slim {
+  margin-bottom: 20px;
 }
 
 .options__program-item--slim::before {
@@ -67,3 +61,26 @@
   top: 24px;
   left: 13px;
 }
+
+.options__program-choice {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#000000;
+  margin-bottom: 18px;
+  margin-left: 19px;
+  padding: 4px 15px 4px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.options__program-choice::after {
+  width: 32px;
+  height: 10px;
+  content: url("/img/images-mobile/arrow.svg");
+  margin-left: 15px;
+}
+
