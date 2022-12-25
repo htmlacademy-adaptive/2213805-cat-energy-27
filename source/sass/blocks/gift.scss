@@ -1,0 +1,25 @@
+.gift {
+  width: 280px;
+  height: 289px;
+  background-image: url("/img/images-catalog/gift.png");
+  background-repeat: no-repeat;
+}
+
+.gift__text {
+  color: rgba(255, 255, 255, 1);
+  font-family: "lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-top: 186px 61px 43px 58px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gift__text::before {
+  content: url("/img/images-catalog/icon-gift.svg");
+  position: absolute;
+  top: -30px;
+}
