@@ -3,6 +3,7 @@
   height: 289px;
   background-image: url("/img/images-catalog/gift.png");
   background-repeat: no-repeat;
+  margin: 35px 20px 35px 20px;
 }
 
 .gift__text {
@@ -11,15 +12,16 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  margin-top: 186px 61px 43px 58px;
+  padding: 186px 61px 43px 58px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 
 .gift__text::before {
   content: url("/img/images-catalog/icon-gift.svg");
   position: absolute;
-  top: -30px;
+  bottom: 151px;
 }

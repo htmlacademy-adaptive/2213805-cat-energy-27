@@ -3,6 +3,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  display: flex;
+  justify-content: center;
+  padding: 25px 36px 49px 20px;
+  margin: 0;
 }
 
 .additional {
@@ -13,6 +17,10 @@
   display: flex;
 }
 .additional__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
   margin: 0;
 }
 
@@ -21,6 +29,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   border-top: 1px solid rgba(235, 235, 235, 1);
+  margin: 8px 20px 14px 20px;
 }
 
 .additional-card__title {

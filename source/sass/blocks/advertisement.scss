@@ -1,6 +1,7 @@
 .advertisement {
   display: flex;
-  height: 480px;
+  min-height: 480px;
+  margin-bottom: 20px;
 }
 
 .advertisement__name {
@@ -29,7 +30,6 @@
   background-image: url("/img/images-mobile/catface-background.png");
   background-repeat: no-repeat;
   position: relative;
-  z-index: 1;
  }
 
  .advertisement__background {
@@ -44,7 +44,6 @@
  }
 
  .advertisement__link {
-  height: 40px;
   width: 280px;
   padding: 7px 44px;
   font-family: "Oswald", sans-serif;
@@ -55,5 +54,4 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: 20px;
  }

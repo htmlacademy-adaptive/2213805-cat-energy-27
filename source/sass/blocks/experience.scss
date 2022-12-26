@@ -7,7 +7,7 @@
 
 .experience__wrapper {
   width: 320px;
-  background-color: rgba(234, 234, 234, 1);
+  background-color: #EAEAEA;
   padding: 25px 20px 40px 20px;
   width: 320px;
   min-height: 659px;
@@ -22,7 +22,7 @@
   justify-content: center;
 }
 
-.experience__description {
+.experience__text {
   font-family: "lato", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -31,7 +31,6 @@
   margin: 7px 0 20px 0;
   display: flex;
   justify-content: center;
-  z-index: 2;
 }
 
 .experience__list {
@@ -48,8 +47,8 @@
   width: 124px;
   min-height: 70px;
   margin-right: 32px;
-  z-index: 1;
   border-radius: 3px;
+  position: relative;
 }
 
 .experience__item:last-child {
@@ -74,6 +73,12 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
+  position: absolute;
+  bottom: -10px;
+  background-color: #EAEAEA;
+  text-align: center;
+  width: 77px;
+  left: -12px;
 }
 
 .experience__spent {

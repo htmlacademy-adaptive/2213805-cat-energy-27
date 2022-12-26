@@ -58,7 +58,7 @@
   left: -120px;
 }
 
-.advantages__item--result {
+.advantages__item--result::before {
   width: 60px;
   height: 60px;
   content: url("/img/images-advantage/advantage-result.svg");
