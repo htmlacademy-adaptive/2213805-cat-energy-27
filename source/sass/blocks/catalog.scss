@@ -1,12 +1,9 @@
 .catalog__options {
   width: 320px;
 }
+
 .catalog__wrapper {
   display: flex;
-}
-
-.catalog-container {
-  width: 320px;
 }
 
 .catalog__list {
@@ -17,3 +14,10 @@
   margin: 0;
 }
 
+.catalog__card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-top: 1px solid #EBEBEB;
+  padding: 8px 20px 14px 20px;
+}
