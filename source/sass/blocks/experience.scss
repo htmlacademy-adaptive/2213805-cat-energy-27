@@ -7,9 +7,8 @@
 
 .experience__wrapper {
   width: 320px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 25px 20px 40px 20px;
-  width: 320px;
   min-height: 659px;
 }
 
@@ -27,7 +26,7 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: rgba(68, 68, 68, 1);
+  color: #000000;
   margin: 7px 0 20px 0;
   display: flex;
   justify-content: center;
@@ -43,7 +42,7 @@
 }
 
 .experience__item {
-  border: #CDCDCD 1px solid;
+  border: #cdcdcd 1px solid;
   width: 124px;
   min-height: 70px;
   margin-right: 32px;
@@ -75,7 +74,7 @@
   font-weight: 400;
   position: absolute;
   bottom: -10px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   text-align: center;
   width: 77px;
   left: -12px;
@@ -90,9 +89,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
- }
+}
 
- .experience__before::after {
+.experience__before::after {
   background-image: url("/img/images-mobile/curtain.svg");
   background-repeat: no-repeat; /*разделитель потерян*/
- }
+}

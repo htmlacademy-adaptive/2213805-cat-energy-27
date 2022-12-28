@@ -1,10 +1,8 @@
-.application-form {
-
-}
-.application-form__wrapper{
+.application-form__wrapper {
   display: flex;
   flex-grow: 1;
 }
+
 .application-form__group {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -12,11 +10,12 @@
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
-  color:#444444;
+  color: #444444;
   border: none;
   padding: 0;
   margin: 0;
 }
+
 .application-form__input {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -24,8 +23,9 @@
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
-  color:#444444;
+  color: #444444;
   width: 280px;
+  display: flex;
 }
 
 .application-form__field {
@@ -35,10 +35,11 @@
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
-  color:#444444;
+  color: #444444;
   padding-top: 14px;
   padding-left: 20px;
   padding-bottom: 13px;
+  flex-grow: 1;
 }
 
 .application-form__group-list {
