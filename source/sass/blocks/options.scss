@@ -1,0 +1,84 @@
+.options {
+  width: 100%;
+}
+
+.options__program {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.options__program-item {
+  width: 280px;
+  min-height: 266px;
+  box-sizing: border-box;
+  text-align: right;
+  word-break: break-word;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.options__program-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 91px;
+}
+
+.options__program-description {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 1);
+  display: flex;
+  text-align: start;
+  padding: 29px 33px 23px 20px;
+}
+
+.options__program-item--slim {
+  margin-bottom: 20px;
+}
+
+.options__program-item--slim::before {
+  content: url("/img/images-mobile/option-slim.svg");
+  position: absolute;
+  top: 21px;
+  left: 22px;
+}
+
+.options__program-item--gain::before {
+  content: url("/img/images-mobile/option-gain.svg");
+  position: absolute;
+  top: 24px;
+  left: 13px;
+}
+
+.options__program-choice {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 18px;
+  margin-left: 19px;
+  padding: 4px 15px 4px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.options__program-choice::after {
+  width: 32px;
+  height: 10px;
+  content: url("/img/images-mobile/arrow.svg");
+  margin-left: 15px;
+}

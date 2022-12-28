@@ -1,0 +1,67 @@
+.advantages {
+  width: 320px;
+  margin: 0 20px 49px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  min-height: 380px;
+}
+
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 42px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style-type: none;
+  min-height: 300px;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 80px;
+}
+
+.advantages__item--nutrition::before {
+  width: 60px;
+  height: 60px;
+  content: url("/img/images-advantage/advantage-natural.svg");
+  position: absolute;
+  left: -120px;
+}
+
+.advantages__item--powder::before {
+  width: 60px;
+  height: 60px;
+  content: url("/img/images-advantage/advantage-powder.svg");
+  position: absolute;
+  left: -120px;
+}
+
+.advantages__item--economy::before {
+  width: 60px;
+  height: 60px;
+  content: url("/img/images-advantage/advantage-fork.svg");
+  position: absolute;
+  left: -120px;
+}
+
+.advantages__item--result::before {
+  width: 60px;
+  height: 60px;
+  content: url("/img/images-advantage/advantage-result.svg");
+  position: absolute;
+  left: -120px;
+}

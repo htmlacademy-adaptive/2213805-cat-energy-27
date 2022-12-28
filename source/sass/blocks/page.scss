@@ -1,0 +1,17 @@
+.page {
+  width: 320px;
+  height: 100%;
+  font-family: "lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.page__body {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  color: #000000;
+  margin: 0;
+}

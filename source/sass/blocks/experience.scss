@@ -1,0 +1,97 @@
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 320px;
+}
+
+.experience__wrapper {
+  width: 320px;
+  background-color: #eaeaea;
+  padding: 25px 20px 40px 20px;
+  min-height: 659px;
+}
+
+.experience__slogan {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 14px;
+  justify-content: center;
+}
+
+.experience__text {
+  font-family: "lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin: 7px 0 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.experience__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 20px 0;
+  justify-content: space-between;
+}
+
+.experience__item {
+  border: #cdcdcd 1px solid;
+  width: 124px;
+  min-height: 70px;
+  margin-right: 32px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.experience__item:last-child {
+  margin-right: 0;
+}
+
+.experience__number {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.experience__description {
+  font-family: "lato", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  position: absolute;
+  bottom: -10px;
+  background-color: #eaeaea;
+  text-align: center;
+  width: 77px;
+  left: -12px;
+}
+
+.experience__spent {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience__before::after {
+  background-image: url("/img/images-mobile/curtain.svg");
+  background-repeat: no-repeat; /*разделитель потерян*/
+}
