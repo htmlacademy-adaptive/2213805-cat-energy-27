@@ -14,7 +14,7 @@
   border: none;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: $tablet-width) {
   .main-header__logo {
     height: 51px;
     width: 174px;
@@ -26,7 +26,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: $desktop-width) {
   .main-header__logo {
     height: 59px;
     width: 202px;
