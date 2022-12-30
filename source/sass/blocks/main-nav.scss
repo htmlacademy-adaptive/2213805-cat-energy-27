@@ -46,3 +46,18 @@
   text-decoration: none;
   justify-content: center;
 }
+
+@media (min-width: @tablet-width) {
+  main-nav__wrapper {
+    visibility: visible;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  main-nav__wrapper {
+    visibility: visible;
+  }
+}

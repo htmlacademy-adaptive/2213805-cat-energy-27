@@ -13,3 +13,27 @@
   margin-right: 65px;
   border: none;
 }
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    height: 51px;
+    width: 174px;
+    margin-right: 94px;
+  }
+
+  .main-nav__toggle--close {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo {
+    height: 59px;
+    width: 202px;
+    margin-right: 408px;
+  }
+
+  .main-nav__toggle--close {
+    display: none;
+  }
+}
