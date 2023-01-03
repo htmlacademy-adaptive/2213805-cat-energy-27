@@ -21,11 +21,93 @@
   background-color: #f2f2f2;
 }
 
+@media (max-width: $mobile-width-only) {
+  .options__program-item {
+  width: 280px;
+  }
+
+  .options__program-title {
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 91px;
+  }
+  .options__program-description {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: start;
+    padding: 29px 33px 23px 20px;
+  }
+  .options__program-item--slim::before {
+    content: url("/img/images-mobile/option-slim.svg");
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    width: 50px;
+    height: 53px;
+  }
+
+  .options__program-item--gain::before {
+    content: url("/img/images-mobile/option-gain.svg");
+    position: absolute;
+    top: 24px;
+    left: 13px;
+    width: 67px;
+    height: 50px;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .options__program-item {
+    width: 708px;
+  }
+  .options__wrapper {
+    flex-direction: column;
+  }
+  .options__program-item--slim::before {
+    content: url("/img/images-tablet/slim-tab.svg");
+    position: absolute;
+    top: 21px;
+    left: 22px;
+  }
+
+  .options__program-item--gain::before {
+    content: url("/img/images-tablet/gain-tab.svg");
+    position: absolute;
+    top: 24px;
+    left: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options__program-item {
+    width: 570px;
+  }
+  .options__wrapper {
+    flex-direction: row;
+  }
+  .options__program-item--slim::before {
+    content: url("/img/images-desktop/slim-desktop.svg");
+    position: absolute;
+    top: 21px;
+    left: 22px;
+  }
+
+  .options__program-item--gain::before {
+    content: url("/img/images-desktop/gain-desktop.svg");
+    position: absolute;
+    top: 24px;
+    left: 13px;
+  }
+}
+
 .options__program-title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
+  font-size: 36px;
+  line-height: 36px;
   text-transform: uppercase;
   display: flex;
   margin-top: 30px;
@@ -34,10 +116,10 @@
 
 .options__program-description {
   font-family: "Lato", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
-  color: rgba(68, 68, 68, 1);
+  color: #444444;
   display: flex;
   text-align: start;
   padding: 29px 33px 23px 20px;
@@ -59,10 +141,12 @@
   position: absolute;
   top: 24px;
   left: 13px;
+  width: 32px;
+  height: 10px;
 }
 
 .options__program-choice {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;

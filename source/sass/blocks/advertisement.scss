@@ -1,56 +1,97 @@
 .advertisement {
   display: flex;
-  min-height: 480px;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
 .advertisement__name {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 60px;
+  line-height: 60px;
   text-align: center;
-  color: #ffffff;
-  z-index: 4;
+  color: #000000;
 }
 
 .advertisement__slogan {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 20px;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
-  z-index: 4;
-}
-
-.advertisement__wrapper {
-  background-image: url("/img/images-mobile/catface-background.png");
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.advertisement__background {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  background-image: url("/img/images-mobile/green-rectangle.png");
-}
-
-.advertisement__product {
-  z-index: 7;
+  color: #000000;
 }
 
 .advertisement__link {
-  width: 280px;
+  width: 244px;
   padding: 7px 44px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 20px;
   background-color: rgba(104, 183, 56, 1);
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (max-width: $mobile-width-only) {
+  .advertisement {
+    display: flex;
+    min-height: 480px;
+    margin-bottom: 20px;
+  }
+
+  .advertisement__name {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 4;
+  }
+
+  .advertisement__slogan {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    z-index: 4;
+  }
+
+  .advertisement__wrapper {
+    background-image: url("/img/images-mobile/cat-index.png");
+    background-repeat: no-repeat;
+  }
+
+  .advertisement__link {
+    width: 280px;
+    padding: 7px 44px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(104, 183, 56, 1);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .advertisement__wrapper {
+    background-image: url("/img/images-tablet/can-tablet.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advertisement__wrapper {
+    background-image: url("/img/images-desktop/can-desktop.png");
+    background-repeat: no-repeat;
+  }
 }
