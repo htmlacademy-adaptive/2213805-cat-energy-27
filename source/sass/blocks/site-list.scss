@@ -23,9 +23,10 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item--current {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #c74343;
     margin-right: 37px;
   }
+
   .site-list__item--second {
     margin-right: 32px;
   }
@@ -37,6 +38,7 @@
     flex-direction: column;
     justify-items: center;
   }
+
   .site-list__item {
     display: flex;
     text-align: center;

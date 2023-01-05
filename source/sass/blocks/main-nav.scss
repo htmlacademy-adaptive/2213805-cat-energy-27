@@ -20,11 +20,12 @@
   justify-content: center;
 }
 
-@media (max-width:$mobile-width-only) {
+@media (max-width: $mobile-width-only) {
   .main-nav {
     width: 24px;
     height: 16px;
   }
+
   .main-nav__toggle {
     width: 24px;
     height: 14px;
@@ -36,9 +37,11 @@
     padding: 0;
     background-color: #ffffff;
   }
+
   .main-nav__wrapper {
     display: none;
   }
+
   .main-nav__link {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
@@ -116,10 +119,6 @@
     font-weight: 400;
     text-transform: uppercase;
     color: #c74343;
-  }
-
-  .main-nav__link--active {
-    border-bottom: 2px solid #ffffff;
   }
 
   .main-nav__wrapper {

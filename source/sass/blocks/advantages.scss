@@ -1,67 +1,231 @@
-.advantages {
-  width: 320px;
-  margin: 0 20px 49px 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 0;
-  min-height: 380px;
+@media (max-width: $mobile-width-only) {
+  .advantages {
+    width: 320px;
+    margin: 0 20px 49px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    min-height: 380px;
+  }
+
+  .advantages__title {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 42px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+    min-height: 300px;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 80px;
+    height: 60px;
+  }
+
+  .advantages__item--nutrition::before {
+    width: 60px;
+    height: 60px;
+    content: url("/img/images-advantage/advantage-natural.svg");
+    position: absolute;
+    left: -120px;
+  }
+
+  .advantages__item--powder::before {
+    width: 60px;
+    height: 60px;
+    content: url("/img/images-advantage/advantage-powder.svg");
+    position: absolute;
+    left: -120px;
+  }
+
+  .advantages__item--economy::before {
+    width: 60px;
+    height: 60px;
+    content: url("/img/images-advantage/advantage-fork.svg");
+    position: absolute;
+    left: -120px;
+  }
+
+  .advantages__item--result::before {
+    width: 60px;
+    height: 60px;
+    content: url("/img/images-advantage/advantage-result.svg");
+    position: absolute;
+    left: -120px;
+  }
 }
 
 .advantages__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 60px;
+  line-height: 60px;
   margin-bottom: 42px;
 }
 
-.advantages__list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  list-style-type: none;
-  min-height: 300px;
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    margin: 45px 30px 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 37px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right;
+    justify-content: space-around;
+  }
+
+  .advantages__item--nutrition {
+    width: 230px;
+    margin-right: 97px;
+    background-image: url("/img/images-tablet/card-one.svg");
+  }
+
+  .advantages__item--nutrition::before {
+    content: url("/img/images-advantage/advantage-natural.svg");
+    position: absolute;
+    top: 20px;
+  }
+
+  .advantages__item--powder {
+    width: 246px;
+    margin-right: 76px;
+    background-image: url("/img/images-tablet/card-two.svg");
+  }
+
+  .advantages__item--powder::before {
+    content: url("/img/images-advantage/advantage-powder.svg");
+    position: absolute;
+    top: 20px;
+  }
+
+  .advantages__item--economy {
+    width: 247px;
+    margin-right: 77px;
+    background-image: url("/img/images-tablet/card-three.svg");
+  }
+
+  .advantages__item--economy::before {
+    content: url("/img/images-advantage/advantage-fork.svg");
+    position: absolute;
+    top: 20px;
+  }
+
+  .advantages__item--result {
+    width: 249px;
+    background-image: url("/img/images-tablet/card-four.svg");
+  }
+
+  .advantages__item--result::before {
+    content: url("/img/images-advantage/advantage-result.svg");
+    position: absolute;
+    top: 20px;
+  }
+
+  .advantages__title {
+    margin-top: 0;
+  }
 }
 
-.advantages__item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-  position: relative;
-  margin-left: 80px;
-}
+@media (min-width: $desktop-width) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+  }
 
-.advantages__item--nutrition::before {
-  width: 60px;
-  height: 60px;
-  content: url("/img/images-advantage/advantage-natural.svg");
-  position: absolute;
-  left: -120px;
-}
+  .advantages__wrapper {
+    margin: 71px 106px 69px 110px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
-.advantages__item--powder::before {
-  width: 60px;
-  height: 60px;
-  content: url("/img/images-advantage/advantage-powder.svg");
-  position: absolute;
-  left: -120px;
-}
+  .advantages__title {
+    margin-top: 0;
+  }
 
-.advantages__item--economy::before {
-  width: 60px;
-  height: 60px;
-  content: url("/img/images-advantage/advantage-fork.svg");
-  position: absolute;
-  left: -120px;
-}
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+  }
 
-.advantages__item--result::before {
-  width: 60px;
-  height: 60px;
-  content: url("/img/images-advantage/advantage-result.svg");
-  position: absolute;
-  left: -120px;
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 37px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right;
+    justify-content: space-around;
+  }
+
+  .advantages__item--nutrition {
+    width: 230px;
+    background-image: url("/img/images-tablet/card-one.svg");
+  }
+
+  .advantages__item--nutrition::before {
+    content: url("/img/images-advantage/advantage-natural.svg");
+    position: absolute;
+    top: 20px;
+  }
+
+  .advantages__item--powder {
+    width: 246px;
+    background-image: url("/img/images-tablet/card-two.svg");
+  }
+
+  .advantages__item--powder::before {
+    content: url("/img/images-advantage/advantage-powder.svg");
+    position: absolute;
+    top: 20px;
+  }
+
+  .advantages__item--economy {
+    width: 247px;
+    background-image: url("/img/images-tablet/card-three.svg");
+  }
+
+  .advantages__item--economy::before {
+    content: url("/img/images-advantage/advantage-fork.svg");
+    position: absolute;
+    top: 20px;
+  }
+
+  .advantages__item--result {
+    width: 249px;
+    background-image: url("/img/images-tablet/card-four.svg");
+  }
+
+  .advantages__item--result::before {
+    content: url("/img/images-advantage/advantage-result.svg");
+    position: absolute;
+    top: 20px;
+  }
 }
