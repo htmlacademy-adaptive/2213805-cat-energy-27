@@ -10,6 +10,8 @@
   }
 
   .advantages__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
     font-size: 36px;
     line-height: 40px;
     margin-bottom: 42px;
@@ -65,14 +67,6 @@
     position: absolute;
     left: -120px;
   }
-}
-
-.advantages__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
-  margin-bottom: 42px;
 }
 
 @media (min-width: $tablet-width) {
@@ -148,6 +142,11 @@
   }
 
   .advantages__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 42px;
     margin-top: 0;
   }
 }
@@ -167,6 +166,10 @@
   }
 
   .advantages__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
     margin-top: 0;
   }
 
