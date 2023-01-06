@@ -1,6 +1,10 @@
 .additional-card__title {
   display: flex;
   text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .additional-card__name {
@@ -34,4 +38,43 @@
   line-height: 14px;
   font-weight: 400;
   color: #444444;
+}
+
+@media (max-width: $mobile-width-only) {
+  .additional__card__button--main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #68b738;
+    border-style: none;
+    font-family: "Oswald", sans-serif;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .additional__card__button--main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #68b738;
+    border-style: none;
+    font-family: "Oswald", sans-serif;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 14px;
+    width: 632px;
+  }
 }

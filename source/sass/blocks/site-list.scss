@@ -13,6 +13,9 @@
 @media (min-width: $tablet-width) {
   .site-list__item--current {
     border-bottom: 2px solid #68b738;
+  }
+
+  .site-list__item--first {
     margin-right: 34px;
   }
 
@@ -24,6 +27,9 @@
 @media (min-width: $desktop-width) {
   .site-list__item--current {
     border-bottom: 2px solid #c74343;
+  }
+
+  .site-list__item--first {
     margin-right: 37px;
   }
 

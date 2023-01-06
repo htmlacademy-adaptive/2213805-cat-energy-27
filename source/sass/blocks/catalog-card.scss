@@ -4,7 +4,6 @@
   align-items: center;
   background-color: #68b738;
   border-style: none;
-  width: 280px;
   font-family: "Oswald", sans-serif;
   height: 40px;
   font-size: 16px;
@@ -16,14 +15,6 @@
   margin-bottom: 14px;
 }
 
-.catalog-card__link {
-  padding: 14px 36px 12px 36px;
-}
-
-.catalog-card__link--big {
-  padding: 11px 28px 1px 28px;
-}
-
 .catalog-card__title {
   text-decoration: none;
   display: flex;
@@ -32,16 +23,9 @@
 .catalog-card__name {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
   color: #222222;
   margin: 0;
-}
-
-.catalog-card__information {
-  display: flex;
-  margin: 19px 0 13px 0;
 }
 
 .catalog-card__list {
@@ -103,4 +87,74 @@
   color: #444444;
   justify-content: center;
   margin-bottom: 23px;
+}
+
+.catalog-card__button--more {
+  background-color: #f2f2f2;
+  color: #444444;
+}
+
+@media (max-width: $mobile-width-only) {
+  .catalog-card__information {
+    display: flex;
+    margin: 19px 0 13px 0;
+  }
+
+  .catalog-card__link {
+    padding: 14px 36px 12px 36px;
+  }
+
+  .catalog-card__link--big {
+    padding: 11px 28px 1px 28px;
+  }
+
+  .catalog-card__button {
+    width: 280px;
+    margin-bottom: 14px;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card__information {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 8px 36px 33px 36px;
+  }
+
+  .catalog-card__name {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .catalog-card__title {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .catalog-card__link {
+    padding: 0;
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .catalog-card__link--big {
+    padding: 0;
+    margin-bottom: 28px;
+  }
+
+  .catalog-card__item {
+    width: 246px;
+  }
+
+  .catalog-card__button {
+    width: 248px;
+    display: flex;
+    align-self: center;
+  }
 }
