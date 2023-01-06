@@ -92,6 +92,7 @@
     background-repeat: no-repeat;
     background-position: right;
     justify-content: space-around;
+    height: 280px;
   }
 
   .advantages__item--nutrition {
@@ -186,10 +187,12 @@
     background-repeat: no-repeat;
     background-position: right;
     justify-content: space-around;
+    height: 280px;
   }
 
   .advantages__item--nutrition {
     width: 230px;
+    margin-right: 97px;
     background-image: url("/img/images-tablet/card-one.svg");
   }
 
@@ -201,6 +204,7 @@
 
   .advantages__item--powder {
     width: 246px;
+    margin-right: 76px;
     background-image: url("/img/images-tablet/card-two.svg");
   }
 
@@ -212,6 +216,7 @@
 
   .advantages__item--economy {
     width: 247px;
+    margin-right: 77px;
     background-image: url("/img/images-tablet/card-three.svg");
   }
 
@@ -230,5 +235,14 @@
     content: url("/img/images-advantage/advantage-result.svg");
     position: absolute;
     top: 20px;
+  }
+
+  .advantages__title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 42px;
+    margin-top: 0;
   }
 }
