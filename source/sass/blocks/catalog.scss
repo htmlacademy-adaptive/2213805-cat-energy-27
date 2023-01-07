@@ -13,12 +13,16 @@
     width: 320px;
   }
 
+  .catalog__wrapper {
+    width: 320px;
+  }
+
   .catalog__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
+    margin: 0 20px 0 20px;
   }
 
   .catalog__card {
@@ -32,6 +36,10 @@
 
 @media (min-width: $tablet-width) {
   .catalog__options {
+    width: 768px;
+  }
+
+  .catalog__wrapper {
     width: 768px;
   }
 
@@ -61,6 +69,10 @@
 
 @media (max-width: $desktop-width) {
   .catalog__options {
+    width: 1440px;
+  }
+
+  .catalog__wrapper {
     width: 1440px;
   }
 
