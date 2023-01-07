@@ -90,13 +90,22 @@
   .additional__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
     margin: 0 30px 69px 30px;
+  }
+
+  .additional__card {
+    display: flex;
+    flex-direction: row;
+    padding: 26px 38px 28px 38px;
+    margin: 0;
+    border: 1px solid #ebebeb;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional {
+    display: flex;
+    justify-content: space-between;
     border-top: 2px solid #68b738;
     position: relative;
   }
@@ -112,5 +121,15 @@
 
   .additional__wrapper {
     margin-top: 81px;
+  }
+
+  .additional__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    border-top: 1px solid #ebebeb;
+    padding: 15px 20px 5px 20px;
+    border-left: none;
+    border-right: none;
   }
 }

@@ -77,4 +77,40 @@
     margin-bottom: 14px;
     width: 632px;
   }
+
+  .additional-card__wrapper {
+    margin-bottom: 0;
+    width: 50%;
+    margin-top: 15px;
+  }
+
+  .additional-card__products {
+    display: flex;
+    width: 50%;
+  }
+
+  .additional-card__value {
+    width: 128px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-card__order {
+    display: flex;
+    margin-left: 40px;
+  }
+
+  .additional__card__button--main {
+    width: 244px;
+  }
+
+  .additional-card__wrapper {
+    width: 243px;
+  }
+
+  .additional-card--last {
+    border-bottom: 1px solid #ebebeb;
+  }
 }

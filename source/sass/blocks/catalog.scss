@@ -59,8 +59,24 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .catalog__options {
     width: 1440px;
   }
+
+  .catalog__list {
+    padding: 0;
+    margin: 82px 0 65px 110px;
+  }
+
+  .catalog__card {
+    width: 245px;
+    margin-bottom: 63px;
+    margin-right: 80px;
+  }
+
+  .catalog__card:nth-child(odd) {
+    margin-right: 80px;
+  }
+
 }
