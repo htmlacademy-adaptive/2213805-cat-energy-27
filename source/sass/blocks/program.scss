@@ -6,8 +6,8 @@
 .program__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 60px;
+  line-height: 60px;
   text-decoration: none;
   color: #000000;
   display: flex;
@@ -17,9 +17,51 @@
 .program__text {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (max-width: $mobile-width-only) {
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .program__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .program__title {
+    text-align: center;
+    margin-top: 65px;
+    margin-left: 69px;
+  }
+
+  .program__text {
+    margin-top: 54px;
+    margin-left: 70px;
+    margin-right: 375px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__title {
+    text-align: center;
+    margin-top: 73px;
+    margin-right: 110px;
+  }
+
+  .program__text {
+    margin-top: 56px;
+    margin-left: 110px;
+    margin-right: 1007px;
+  }
 }
