@@ -82,7 +82,6 @@
   .application-form__group {
     margin-left: 71px;
     margin-right: 67px;
-    margin: 0;
   }
 
   .application-form {
@@ -228,18 +227,16 @@
     margin-left: 71px;
     flex-direction: row;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .application-form__group-list--checkbox {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 70px;
-    margin-right: 70px;
-    justify-content: space-evenly;
+    margin: 57px 205px 61px 110px;
+    padding: 0;
+    justify-content: space-between;
     width: 1200px;
-    margin-left: 71px;
   }
 
   .application-form__part {
@@ -265,5 +262,41 @@
 
   .application-form__wrapper--options {
     margin: 0 69px 75px 80px;
+  }
+
+  .application-form__owner--part {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .application-form__input--email {
+    margin: 76px 78px 67px 111px;
+  }
+
+  .application-form__input--phone {
+    margin: 76px 110px 67px 0;
+  }
+
+  .application-form__input--comments {
+    width: 1220px;
+    margin-bottom: 67px;
+  }
+
+  .application-form__checkbox--sugar {
+    margin: 0;
+  }
+
+  .application-form__checkbox--milk {
+    margin: 0;
+  }
+
+  .application-form__group {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .application-form__button--green {
+    width: 568px;
+    height: 52px;
   }
 }
