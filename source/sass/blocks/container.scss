@@ -4,18 +4,18 @@
 
 @media (max-width: $mobile-width-only) {
   .container {
-    max-width: 320px;
+    width: 320px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    max-width: 1440px;
+    width: 1440px;
   }
 }

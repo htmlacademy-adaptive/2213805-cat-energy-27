@@ -37,14 +37,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog__options {
-    width: 768px;
-  }
-
-  .catalog__wrapper {
-    width: 768px;
-  }
-
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
@@ -57,11 +49,6 @@
     height: 511px;
     padding: 0;
     margin-bottom: 60px;
-    background: linear-gradient(
-      to top,
-      #f2f2f2 430px,
-      #ffffff 81px
-      );
   }
 
   .catalog__card:nth-child(odd) {
@@ -69,15 +56,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-  .catalog__options {
-    width: 1440px;
-  }
-
-  .catalog__wrapper {
-    width: 1440px;
-  }
-
+@media (min-width: $desktop-width) {
   .catalog__list {
     padding: 0;
     margin: 82px 0 65px 110px;

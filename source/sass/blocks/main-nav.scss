@@ -20,6 +20,14 @@
   justify-content: center;
 }
 
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:disabled {
+  opacity: 0.3;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav {
     width: 24px;

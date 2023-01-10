@@ -16,6 +16,14 @@
   background-repeat: no-repeat;
 }
 
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
+}
+
 @media (min-width: $tablet-width) {
   .main-header {
     width: 708px;

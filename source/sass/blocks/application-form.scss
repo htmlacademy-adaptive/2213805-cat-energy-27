@@ -61,6 +61,15 @@
   text-decoration: none;
 }
 
+.application-form__button--green:hover {
+  background-color: #5eaa2f;
+}
+
+.application-form__button--green:active {
+  background-color: #5eaa2f;
+  opacity: 0.3;
+}
+
 @media (max-width: $mobile-width-only) {
   .application-form__wrapper {
     display: flex;
@@ -393,6 +402,7 @@
   .application-form__input--comments {
     width: 1220px;
     margin-bottom: 67px;
+    border: 1px solid #e7e7e7;
   }
 
   .application-form__checkbox--sugar {
