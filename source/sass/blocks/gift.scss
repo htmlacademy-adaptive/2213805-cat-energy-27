@@ -25,3 +25,32 @@
   position: absolute;
   bottom: 151px;
 }
+
+@media (min-width: $tablet-width) {
+  .gift {
+    width: 707px;
+    min-height: 200px;
+    background-image: url("/img/images-tablet/gift-tablet.png");
+    background-repeat: no-repeat;
+    margin: 69px 30px 76px 31px;
+  }
+
+  .gift__text {
+    padding: 80px 100px 10px 450px;
+  }
+
+  .gift__text::before {
+    top: 65px;
+    left: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    min-height: 289px;
+    background-image: url("/img/images-desktop/gift-desktop.png");
+    background-repeat: no-repeat;
+    margin: 80px 109px 86px 79px;
+  }
+}

@@ -14,3 +14,12 @@
 .social__item:last-child {
   padding-right: 0;
 }
+
+.social__link:hover {
+  background-color: #68b738;
+}
+
+.social__link:active {
+  background-color: #68b738;
+  opacity: 0.3;
+}

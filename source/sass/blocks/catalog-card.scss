@@ -4,7 +4,6 @@
   align-items: center;
   background-color: #68b738;
   border-style: none;
-  width: 280px;
   font-family: "Oswald", sans-serif;
   height: 40px;
   font-size: 16px;
@@ -16,12 +15,13 @@
   margin-bottom: 14px;
 }
 
-.catalog-card__link {
-  padding: 14px 36px 12px 36px;
+.catalog-card__button:active {
+  background-color: #5eaa2f;
 }
 
-.catalog-card__link--big {
-  padding: 11px 28px 1px 28px;
+.catalog-card__button--green:active {
+  background-color: #5eaa2f;
+  opacity: 0.3;
 }
 
 .catalog-card__title {
@@ -32,16 +32,11 @@
 .catalog-card__name {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
   color: #222222;
-  margin: 0;
-}
-
-.catalog-card__information {
-  display: flex;
-  margin: 19px 0 13px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: center;
 }
 
 .catalog-card__list {
@@ -89,12 +84,14 @@
   content: url("/img/images-mobile/plus.svg");
   order: 1;
   position: absolute;
-  top: -50px;
+  top: 30px;
 }
 
 .catalog-card__name--add {
   display: flex;
   order: 2;
+  text-align: center;
+  margin-top: 80px;
 }
 
 .catalog-card__description {
@@ -103,4 +100,104 @@
   color: #444444;
   justify-content: center;
   margin-bottom: 23px;
+  text-align: center;
+}
+
+.catalog-card__button--more {
+  background-color: #f2f2f2;
+  color: #444444;
+  order: 4;
+}
+
+.catalog-card--more {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: $mobile-width-only) {
+  .catalog-card__information {
+    display: flex;
+    margin: 19px 0 13px 0;
+  }
+
+  .catalog-card__link {
+    padding: 14px 36px 12px 36px;
+  }
+
+  .catalog-card__link--big {
+    padding: 11px 28px 1px 28px;
+  }
+
+  .catalog-card__button {
+    width: 280px;
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card__information {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 8px 36px 33px 36px;
+  }
+
+  .catalog-card__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog-card__title {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .catalog-card__link {
+    padding: 0;
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .catalog-card__link--big {
+    padding: 0;
+    margin-bottom: 28px;
+  }
+
+  .catalog-card__item {
+    width: 246px;
+  }
+
+  .catalog-card__button {
+    width: 248px;
+    display: flex;
+    align-self: center;
+  }
+
+  .catalog-card--more {
+    background-color: #ffffff;
+    color: #000000;
+    outline: 2px solid #f2f2f2;
+  }
+
+  .catalog-card {
+    background: linear-gradient(
+      to top,
+      #f2f2f2 430px,
+      #ffffff 81px
+      );
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-card__button {
+    width: 168px;
+    margin-bottom: 40px;
+  }
+
+  .catalog-card__item {
+    width: 165px;
+  }
 }

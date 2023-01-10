@@ -1,12 +1,38 @@
 .page-title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
   display: flex;
-  justify-content: center;
-  border-top: 1px solid #ebebeb;
-  margin-top: 27px;
-  margin-bottom: 41px;
-  margin-left: 20px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-title {
+    font-size: 60px;
+    line-height: 60px;
+    justify-content: center;
+    border-top: 1px solid #ebebeb;
+    margin-top: 27px;
+    margin-bottom: 41px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    margin-top: 65px;
+    margin-left: 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    font-size: 60px;
+    line-height: 60px;
+    justify-content: center;
+    border-top: 1px solid #ebebeb;
+    margin-top: 27px;
+    margin-bottom: 41px;
+    margin-left: 20px;
+  }
 }
