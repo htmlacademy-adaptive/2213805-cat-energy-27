@@ -1,0 +1,21 @@
+.container {
+  margin: 0 auto;
+}
+
+@media (max-width: $mobile-width-only) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1440px;
+  }
+}

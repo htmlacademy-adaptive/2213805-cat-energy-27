@@ -47,7 +47,6 @@
     line-height: 36px;
     text-align: center;
     color: #ffffff;
-    z-index: 4;
   }
 
   .promotion__slogan {
@@ -56,8 +55,16 @@
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
-    color: #000000;
-    z-index: 4;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .promotion__program {
+    display: flex;
+    width: 280px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
   }
 
   .promotion__wrapper {
@@ -94,6 +101,11 @@
     margin-left: 120px;
     margin-top: 49px;
   }
+
+  .promotion__image {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -110,5 +122,29 @@
   .promotion__link {
     margin-left: 120px;
     margin-top: 49px;
+  }
+
+  .promotion__product {
+    margin: 50px;
+  }
+
+  .promotion__advert {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .promotion__image {
+    width: 50%;
+  }
+
+  .promotion__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .promotion__program {
+    margin-top: 52px;
   }
 }

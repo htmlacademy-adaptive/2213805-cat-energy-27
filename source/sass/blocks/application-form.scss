@@ -71,6 +71,119 @@
   .application-form__additional {
     visibility: hidden;
   }
+
+  .application-form__wrapper--cat {
+    margin: 29px 0 24px 0;
+  }
+
+  .application-form__input {
+    margin-bottom: 14px;
+  }
+
+  .application-form__wrapper--options {
+    margin: 22px 24px 19px 20px;
+  }
+
+  .application-form__group-list--radiobutton {
+    padding: 0;
+  }
+
+  .application-form__radiobutton {
+    margin-bottom: 13px;
+  }
+
+  .application-form__wrapper--owner {
+    border-top: 2px solid #68b738;
+    position: relative;
+    margin: 20px;
+  }
+
+  .application-form__owner {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: #ffffff;
+    padding: 0;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .application-form__owner--part {
+    margin-top: 34px;
+  }
+
+  .application-form__input--email {
+    margin: 35px 20px 14px 0;
+  }
+
+  .application-form__input--phone {
+    margin: 0 20px 20px 0;
+  }
+
+  .application-form__wrapper--comments {
+    border-top: 2px solid #68b738;
+    position: relative;
+    margin: 20px;
+  }
+
+  .application-form__comments {
+    position: absolute;
+    top: -10px;
+    background-color: #ffffff;
+    padding-left: 0;
+    padding-right: 14px;
+    text-transform: none;
+  }
+
+  .application-form__input--comments {
+    margin: 37px 20px 22px 0;
+    width: 280px;
+    min-height: 150px;
+    display: flex;
+  }
+
+  .application-form__textarea {
+    flex-grow: 1;
+  }
+
+  .application-form__wrapper--additional {
+    margin: 0;
+  }
+
+  .application-form__checkbox {
+    margin-bottom: 14px;
+  }
+
+  .application-form__wrapper--additional {
+    border-top: 2px solid #68b738;
+    position: relative;
+    margin: 20px;
+  }
+
+  .application-form__additional {
+    position: absolute;
+    top: -10px;
+    background-color: #ffffff;
+    padding-left: 0;
+    padding-right: 14px;
+    text-transform: none;
+    visibility: visible;
+  }
+
+  .application-form__group-list--checkbox {
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  .application-form__button--green {
+    width: 280px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {

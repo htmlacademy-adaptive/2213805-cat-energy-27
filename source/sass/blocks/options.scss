@@ -21,7 +21,47 @@
   background-color: #f2f2f2;
 }
 
+.options__program-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.options__program-description {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  color: #444444;
+  display: flex;
+  text-align: start;
+}
+
+.options__program-choice {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.options__program-choice::after {
+  width: 32px;
+  height: 10px;
+  content: url("/img/images-mobile/arrow.svg");
+  margin-left: 15px;
+}
+
 @media (max-width: $mobile-width-only) {
+  .options__program {
+    align-content: center;
+  }
+
   .options__program-item {
     width: 280px;
   }
@@ -93,7 +133,7 @@
   }
 
   .options__program-description {
-    margin: 0 316px 48px 52px;
+    margin: 0 280px 48px 52px;
     padding: 0;
     padding-right: 40px;
   }
@@ -153,6 +193,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
   }
 
   .options__program-item--slim::before {
@@ -172,40 +213,4 @@
   .options__program-choice {
     margin-top: 23px;
   }
-}
-
-.options__program-title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  text-transform: uppercase;
-  display: flex;
-}
-
-.options__program-description {
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
-  color: #444444;
-  display: flex;
-  text-align: start;
-}
-
-.options__program-choice {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 29px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.options__program-choice::after {
-  width: 32px;
-  height: 10px;
-  content: url("/img/images-mobile/arrow.svg");
-  margin-left: 15px;
 }

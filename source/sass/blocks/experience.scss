@@ -116,6 +116,11 @@
     display: flex;
     justify-content: center;
   }
+
+  .experience__image {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 @media (min-width: $tablet-width) {
