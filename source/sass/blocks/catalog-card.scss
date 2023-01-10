@@ -84,7 +84,6 @@
   content: url("/img/images-mobile/plus.svg");
   order: 1;
   position: absolute;
-  position: absolute;
   top: 30px;
 }
 
@@ -176,11 +175,13 @@
     display: flex;
     align-self: center;
   }
+
   .catalog-card--more {
     background-color: #ffffff;
     color: #000000;
-    outline: 2px solid #F2F2F2;
+    outline: 2px solid #f2f2f2;
   }
+
   .catalog-card {
     background: linear-gradient(
       to top,
