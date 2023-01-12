@@ -17,46 +17,54 @@
   margin: o auto;
   text-transform: capitalize;
   text-decoration: none;
-  justify-content: center;
-}
+   justify-content: center;
+ }
 
-.main-nav__link:hover {
-  opacity: 0.6;
-}
+ .main-nav__link:hover {
+   opacity: 0.6;
+ }
 
-.main-nav__link:disabled {
-  opacity: 0.3;
-}
+ .main-nav__link:disabled {
+   opacity: 0.3;
+ }
 
-@media (max-width: $mobile-width-only) {
-  .main-nav {
-    width: auto;
-    position: relative;
-    min-height: 198px;
-    background-color: #ffffff;
-  }
-
-  .main-nav--closed .main-nav__toggle::before {
-    content: url("/img/images-mobile/open-mobile.svg");
+ @media (max-width: $mobile-width-only) {
+   .main-nav {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 30px;
-    height: 5px;
+    top: 65px;
+    left: 0;
+    width: auto;
+    min-height: 198px;
     background-color: #ffffff;
   }
 
   .main-nav__toggle {
     position: absolute;
-    top: 0;
-    right: 0;
     width: 24px;
-    height: 14px;
-    margin-top: 4px;
+    height: 20px;
     border: none;
     cursor: pointer;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #68b738;
+    z-index: 2;
+    display: block;
+    top: -45px;
+    right: 0;
+  }
+
+  .main-nav--closed .main-nav__toggle:active::before {
+    margin-top: 4px;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-image: url("/img/images-mobile/toggle-icon.svg");
+    z-index: 2;
   }
 
   .main-nav--opened .main-nav__toggle {
@@ -64,20 +72,97 @@
     right: auto;
     left: 0;
 
-    &::before,
-    &::after {
-      content: url("/img/images-mobile/close-icon.svg");
+    .main-nav--opened .main-nav__toggle::before {
       position: absolute;
-      top: 10px;
-      left: 5px;
+      top: 24px;
+      left: 18px;
+      width: 18px;
+      height: 18px;
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 18px;
       width: 36px;
       height: 2px;
       background-color: #ffffff;
+      background-image: url("/img/images-mobile/close-icon.svg");
+      }
+    }
+  }
+/*
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
     }
 
-    .main-nav--closed .site-list__item {
-      display: none;
+    &::after {
+      transform: rotate(-45deg);
     }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade(#ffffff, 30%);
+    }
+*/
+  .site-list a {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .site-list__item--active a {
+    border-bottom: 2px solid #68b738;
+    text-align: center;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 70px;
+    z-index: 10;
+    min-height: 80vh;
+    background-color: #6a4d38;
+  }
+
+  .main-nav--opened .main-nav__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 7px;
+    height: 100%;
+    box-shadow: inset 4px 0 7px -2px fade(#000000, 40%);
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .site-list__item--active a {
+    padding-right: 21px;
+    padding-left: 21px;
+    text-align: center;
   }
 
   .main-nav__link {
@@ -90,6 +175,7 @@
     margin: 0 auto;
     padding-top: 22px;
     padding-bottom: 24px;
+    text-transform: capitalize;
     text-decoration: none;
     justify-content: center;
   }
@@ -100,23 +186,19 @@
     align-items: baseline;
     margin-top: 18px;
   }
-
   .main-nav__wrapper {
     width: 440px;
     margin: 0 auto;
   }
-
   .main-nav__list {
     text-decoration: none;
     flex-direction: row;
     margin: 0 auto;
     padding: 0;
   }
-
   .main-nav__toggle {
     display: none;
   }
-
   .main-nav__link {
     font-family: "Oswald", sans-serif;
     font-size: 18px;

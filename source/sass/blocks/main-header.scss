@@ -16,6 +16,12 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-header {
+  position: relative;
+  }
+}
+
 .main-header__logo:hover {
   opacity: 0.8;
 }

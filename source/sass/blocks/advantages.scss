@@ -175,6 +175,8 @@
   .advantages__list {
     display: flex;
     flex-direction: row;
+    margin-left: 110px;
+    margin-right: 110px;
   }
 
   .advantages__item {
@@ -190,7 +192,7 @@
 
   .advantages__item--nutrition {
     width: 230px;
-    margin-right: 94px;
+    margin-right: 0;
     background-image: url("/img/images-tablet/card-one.svg");
   }
 
@@ -202,7 +204,7 @@
 
   .advantages__item--powder {
     width: 246px;
-    margin-right: 79px;
+    margin-right: 0;
     background-image: url("/img/images-tablet/card-two.svg");
   }
 
@@ -214,7 +216,7 @@
 
   .advantages__item--economy {
     width: 247px;
-    margin-right: 77px;
+    margin-right: 0;
     background-image: url("/img/images-tablet/card-three.svg");
   }
 
@@ -243,5 +245,6 @@
     line-height: 60px;
     margin-bottom: 42px;
     margin-top: 0;
+    margin-left: 110px;
   }
 }

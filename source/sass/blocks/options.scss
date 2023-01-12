@@ -62,6 +62,12 @@
     align-content: center;
   }
 
+  .options__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
   .options__program-item {
     width: 280px;
   }
