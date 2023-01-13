@@ -6,30 +6,31 @@
   <meta name="viewport"
 content="width=device-width, initial-scale=1">
   <title>Cat energy</title>
+  <script src="script.js"></script>
   <base href="https://htmlacademy-adaptive.github.io/2213805-cat-energy-27/4/">
 </head>
-<body class="page__body">
+<body class="page__body page__body--image">
   <header class="main-header">
     <a class="main-header__logo">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--hidden" type="button">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper main-nav__wrapper--open">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--first site-list__item--current">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link main-nav__link--index" href="#">
               Главная
             </a>
           </li>
           <li class="site-list__item site-list__item--second">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link main-nav__link--index" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__link main-nav__link--index" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -140,7 +141,12 @@ content="width=device-width, initial-scale=1">
           <p class="collaboration__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="map">
-          <img class="map__image" src="img/images-mobile/location-mobile.png" height="362" width="320" alt="Мы на карте.">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.415214209292!2d30.314314105483238!3d59.938716211437814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sen!2sth!4v1673413009861!5m2!1sen!2sth"
+          width="100%"
+          height="450"
+          style="border:0;"
+          allowfullscreen
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
         </div>
       </section>
       <div class="footer__part">
