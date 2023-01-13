@@ -26,7 +26,11 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item--current {
-    border-bottom: 2px solid #c74343;
+    border-bottom: 2px solid #68b738;
+  }
+
+  .site-list__item--current .main-nav__link--index {
+    border-bottom: 2px solid #ffffff;
   }
 
   .site-list__item--first {
@@ -54,4 +58,3 @@
     border-top: 1px solid #e6e6e6;
   }
 }
-

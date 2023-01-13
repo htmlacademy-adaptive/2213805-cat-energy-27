@@ -106,6 +106,15 @@
     display: flex;
     justify-content: center;
   }
+
+  .promotion__program {
+    position: absolute;
+    top: 370px;
+  }
+
+  .promotion__advert {
+    position: relative;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -120,7 +129,7 @@
   }
 
   .promotion__link {
-    margin-left: 120px;
+    margin-left: 190px;
     margin-top: 49px;
   }
 
@@ -135,18 +144,15 @@
     width: 50%;
   }
 
-  .promotion__image {
-    background-image: url("/img/images-desktop/cat-green-desktop.png");
-    background-repeat: no-repeat;
-    width: 50%;
-  }
-
   .promotion__wrapper {
     display: flex;
     flex-wrap: wrap;
+    z-index: 2;
   }
 
   .promotion__program {
     margin-top: 52px;
+    position: absolute;
+    top: 480px;
   }
 }

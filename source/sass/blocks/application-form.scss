@@ -71,6 +71,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .application-form {
+    margin: 20px;
+  }
+
   .application-form__wrapper {
     display: flex;
     flex-grow: 1;
@@ -130,6 +134,7 @@
     border-top: 2px solid #68b738;
     position: relative;
     margin: 20px;
+    width: 100%;
   }
 
   .application-form__comments {
@@ -160,6 +165,7 @@
     border-top: 2px solid #68b738;
     position: relative;
     margin: 20px;
+    width: 100%;
   }
 
   .application-form__additional {
@@ -246,6 +252,7 @@
   .application-form__wrapper--owner {
     border-top: 2px solid #68b738;
     position: relative;
+    width: 100%;
   }
 
   .application-form__owner {
@@ -261,7 +268,7 @@
   }
 
   .application-form__input--email {
-    margin: 76px 66px 20px 71px;
+    margin: 76px 66px 20px 51px;
   }
 
   .application-form__input--phone {
@@ -271,6 +278,7 @@
   .application-form__wrapper--comments {
     border-top: 2px solid #68b738;
     position: relative;
+    width: 100%;
   }
 
   .application-form__comments {
@@ -299,6 +307,7 @@
   .application-form__wrapper--additional {
     border-top: 2px solid #68b738;
     position: relative;
+    width: 100%;
   }
 
   .application-form__additional {
@@ -355,7 +364,7 @@
 
   .application-form__part {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 
@@ -366,6 +375,7 @@
 
   .application-form__group-list--radiobutton {
     width: 568px;
+    height: 175px;
   }
 
   .application-form__wrapper--cat {
@@ -375,7 +385,8 @@
   }
 
   .application-form__wrapper--options {
-    margin: 0 69px 75px 80px;
+    width: 100%;
+    margin: 0 69px 75px 0;
   }
 
   .application-form__owner--part {

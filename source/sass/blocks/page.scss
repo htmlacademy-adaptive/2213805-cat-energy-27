@@ -13,3 +13,20 @@
   color: #000000;
   margin: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .page__body--image::before {
+    background-image: url("/img/images-desktop/cat-green-desktop.png");
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    content: "";
+  }
+
+  .page__body--image {
+    position: relative;
+  }
+}

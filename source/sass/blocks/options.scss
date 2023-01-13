@@ -58,6 +58,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .options {
+    margin-top: 20px;
+  }
+
   .options__program {
     align-content: center;
   }
@@ -121,6 +125,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .options {
+    margin-top: 0;
+  }
+
   .options__program-item {
     width: 708px;
     min-height: 372px;
@@ -131,6 +139,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-content: center;
   }
 
   .options__program-title {
@@ -159,7 +168,7 @@
     content: url("/img/images-tablet/gain-tab.svg");
     position: absolute;
     top: 75px;
-    right: 35px;
+    right: 410px;
   }
 
   .options__program-choice {
@@ -170,6 +179,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .options {
+    margin-top: 267px;
+  }
+
   .options__program {
     flex-direction: row;
   }

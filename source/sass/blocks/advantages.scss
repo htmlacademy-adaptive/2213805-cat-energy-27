@@ -72,6 +72,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    margin-top: 45px;
+  }
+
   .advantages__wrapper {
     margin: 45px 30px 10px 30px;
     display: flex;
@@ -163,6 +167,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 1440px;
+    margin-top: 71px;
   }
 
   .advantages__wrapper {
