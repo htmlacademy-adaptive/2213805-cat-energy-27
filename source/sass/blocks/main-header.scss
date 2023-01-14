@@ -1,15 +1,63 @@
 .main-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   background-color: #ffffff;
   color: #000000;
-  width: 281px;
-  padding: 11px 20px 17px 20px;
+  padding: 11px 10px 17px 10px;
+  justify-content: center;
 }
 
 .main-header__logo {
   height: 37px;
+  width: 191px;
   margin-right: 65px;
   border: none;
+  background-image: url("/img/images-mobile/mobile-logo.svg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-header {
+    position: relative;
+  }
+}
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .main-header__logo {
+    height: 51px;
+    width: 174px;
+    background-image: url("/img/images-tablet/logo-tablet.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .main-header__logo {
+    height: 59px;
+    width: 202px;
+    background-image: url("/img/images-desktop/logo-desktop.svg");
+    background-repeat: no-repeat;
+    margin-top: 53px;
+    margin-right: 540px;
+  }
 }

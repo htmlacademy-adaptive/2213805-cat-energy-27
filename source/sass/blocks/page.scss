@@ -1,5 +1,4 @@
 .page {
-  width: 320px;
   height: 100%;
   font-family: "lato", sans-serif;
   font-size: 14px;
@@ -8,10 +7,26 @@
 }
 
 .page__body {
-  min-width: 320px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
   color: #000000;
   margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .page__body--image::before {
+    background-image: url("/img/images-desktop/cat-green-desktop.png");
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    content: "";
+  }
+
+  .page__body--image {
+    position: relative;
+  }
 }
