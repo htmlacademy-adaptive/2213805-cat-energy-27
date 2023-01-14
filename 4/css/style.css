@@ -145,67 +145,37 @@
     position: absolute;
     top: 65px;
     left: 0;
-    width: auto;
+    width: 100%;
     min-height: 198px;
     background-color: #ffffff;
+  }
+
+  .main-nav--opened {
+    min-height: 198px;
+  }
+
+  .main-nav--closed {
+    height: 0;
   }
 
   .main-nav__toggle {
     position: relative;
     padding: 0;
-    top: 0;
+    top: 10px;
     right: 20px;
     width: 24px;
     height: 22px;
     cursor: pointer;
     justify-self: end;
     border: none;
+    background: url("/img/images-mobile/toggle-icon.svg") center no-repeat;
     background-color: transparent;
   }
 
-  .main-nav--closed .main-nav__toggle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 24px;
-    height: 2px;
-    background-color: #000000;
-    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  .main-nav__toggle.active {
+    background: url("/img/images-mobile/close-icon.svg") center no-repeat;
   }
 
-  .main-nav--opened .main-nav__toggle::before, .main-nav--opened .main-nav__toggle::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: #000001;
-  }
-  .main-nav--opened .main-nav__toggle::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-  .main-nav--opened .main-nav__toggle::after {
-    transform: rotate(-45deg);
-  }
-
-  /*
-    &::before {
-      transform: rotate(45deg);
-      box-shadow: none;
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-
-    &:active::before,
-    &:active::after {
-      background-color: fade(#ffffff, 30%);
-    }
-  */
   .site-list a {
     position: relative;
     display: block;
@@ -1633,7 +1603,7 @@
 }
 @media (max-width: 767px) {
   .site-list {
-    width: 320px;
+    width: 100%;
     flex-direction: column;
     justify-items: center;
     padding: 0;
@@ -2377,7 +2347,7 @@
     content: url("/img/images-tablet/gain-tab.svg");
     position: absolute;
     top: 75px;
-    right: 410px;
+    right: 60px;
   }
 
   .options__program-choice {
