@@ -64,6 +64,10 @@
     background: url("/img/images-mobile/close-icon.svg") center no-repeat;
   }
 
+  .main-nav--closed .main-nav__toggle--nojs {
+    display: none;
+  }
+
   .site-list a {
     position: relative;
     display: block;

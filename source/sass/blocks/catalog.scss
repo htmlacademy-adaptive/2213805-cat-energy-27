@@ -1,5 +1,6 @@
 .catalog__wrapper {
   display: flex;
+  justify-content: center;
 }
 
 .catalog__card {
@@ -9,14 +10,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .catalog__options {
-    width: 320px;
-  }
-
-  .catalog__wrapper {
-    width: 320px;
-  }
-
   .catalog__list {
     display: flex;
     flex-direction: column;

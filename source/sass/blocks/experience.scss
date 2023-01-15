@@ -1,12 +1,5 @@
 .experience {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 320px;
-}
-
-.experience__wrapper {
-  background-color: #ffffff;
+  width: 100%;
 }
 
 .experience__slogan {
@@ -91,11 +84,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .experience {
-    flex-direction: column;
-    width: 320px;
-  }
-
   .experience__wrapper {
     background-color: #eaeaea;
     min-height: 659px;
@@ -132,7 +120,6 @@
 
 @media (min-width: $tablet-width) {
   .experience {
-    width: 768px;
     border-top: 1px solid #e6e6e6;
   }
 
