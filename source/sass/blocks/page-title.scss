@@ -6,10 +6,16 @@
 
 @media (max-width: $mobile-width-only) {
   .page-title {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 36px;
+    line-height: 36px;
     justify-content: center;
     border-top: 1px solid #ebebeb;
+    margin-top: 27px;
+    margin-bottom: 41px;
+    margin-left: 20px;
+  }
+
+  .page-title--catalog {
     margin-top: 27px;
     margin-bottom: 41px;
     margin-left: 20px;
@@ -23,6 +29,12 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  .page-title--catalog {
+    margin-top: 27px;
+    margin-bottom: 41px;
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -31,8 +43,14 @@
     line-height: 60px;
     justify-content: center;
     border-top: 1px solid #ebebeb;
-    margin-top: 27px;
+    margin-top: 74px;
     margin-bottom: 41px;
     margin-left: 20px;
+  }
+
+  .page-title--catalog {
+    padding-top: 74px;
+    margin-bottom: 41px;
+    margin-left: 110px;
   }
 }

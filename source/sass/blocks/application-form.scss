@@ -91,6 +91,8 @@
 
   .application-form__wrapper--options {
     margin: 22px 24px 19px 20px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
   }
 
   .application-form__group-list--radiobutton {
@@ -133,7 +135,6 @@
   .application-form__wrapper--comments {
     border-top: 2px solid #68b738;
     position: relative;
-    margin: 20px;
     width: 100%;
   }
 
@@ -200,7 +201,7 @@
   }
 
   .application-form__group {
-    margin-left: 71px;
+    margin-left: 0;
     margin-right: 67px;
   }
 
@@ -362,6 +363,7 @@
     width: 1200px;
   }
 
+
   .application-form__part {
     display: flex;
     flex-wrap: nowrap;
@@ -381,7 +383,7 @@
   .application-form__wrapper--cat {
     margin-bottom: 72px;
     margin-left: 71px;
-    margin-right: 0;
+    margin-right: 80px;
   }
 
   .application-form__wrapper--options {
@@ -395,7 +397,7 @@
   }
 
   .application-form__input--email {
-    margin: 76px 78px 67px 111px;
+    margin: 76px 78px 67px 71px;
   }
 
   .application-form__input--phone {
@@ -405,7 +407,6 @@
   .application-form__input--comments {
     width: 1220px;
     margin-bottom: 67px;
-    border: 1px solid #e7e7e7;
   }
 
   .application-form__checkbox--sugar {
