@@ -83,9 +83,20 @@
   background-repeat: no-repeat; /*разделитель потерян*/
 }
 
+.experience__image {
+  position: relative;
+}
+
+.experience__fat {
+  position: absolute;
+  overflow: hidden;
+}
+
 @media (max-width: $mobile-width-only) {
-  .experience__wrapper {
+  .experience {
     background-color: #eaeaea;
+  }
+  .experience__wrapper {
     min-height: 659px;
   }
 
@@ -121,6 +132,7 @@
 @media (min-width: $tablet-width) {
   .experience {
     border-top: 1px solid #e6e6e6;
+    background: linear-gradient(to bottom, #ffffff 619px, #e5e5e5 462px, #e5e5e5);
   }
 
   .experience__wrapper {
@@ -152,27 +164,23 @@
     width: 50%;
   }
 
+  .experience__part {
+    padding-bottom: 101px;
+  }
+
   .experience__image {
     margin-left: 200px;
-    background: linear-gradient(
-      to top,
-      #ffffff 151px,
-      #eaeaea 462px,
-      );
   }
 }
 
 @media (min-width: $desktop-width) {
   .experience {
-    background: linear-gradient(
-      to top,
-      #e5e5e5 136px,
-      #f2f2f2 462px
-      );
+    border-top: none;
+    background: linear-gradient(to bottom, #ffffff 136px, #e5e5e5 136px, #e5e5e5);
   }
 
   .experience__wrapper {
-    border-top: 1px solid #e6e6e6;
+    border-top: none
   }
 
   .experience__slogan {
@@ -182,7 +190,7 @@
   }
 
   .experience__text {
-    margin: 70px 224px 29px 110px;
+    margin: 146px 224px 29px 110px;
   }
 
   .experience__part {
@@ -197,10 +205,5 @@
 
   .experience__image {
     padding-left: 200px;
-    background-color: #f2f2f2;
-  }
-
-  .experience__before {
-    background-color: #f2f2f2;
   }
 }

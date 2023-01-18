@@ -34,15 +34,19 @@ content="width=device-width, initial-scale=1">
       </ul>
     </nav>
   </header>
-  <main class="program container">
-    <h1 class="program__title">Подбор программы</h1>
+  <main class="program">
+    <div class="program__name container">
+      <h1 class="program__title">Подбор программы</h1>
+    </div>
     <section class="program__content">
-      <div class="program__wrapper container">
-        <h2 class="program__text">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+      <div class="program__wrapper">
+        <div class="program__slogan container">
+          <h2 class="program__text">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+        </div>
         <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="application-form__part">
+          <div class="application-form__part container">
             <div class="application-form__wrapper application-form__wrapper--cat">
-              <fieldset class="application-form__group">
+              <fieldset class="application-form__group application-form__group--cat container">
                 <legend class="visually-hidden">Данные кота.</legend>
                 <div class="application-form__input">
                   <label class="application-form__label" for="name__cat">Имя:<sup>*</sup></label>
@@ -59,7 +63,7 @@ content="width=device-width, initial-scale=1">
               </fieldset>
             </div>
             <div class="application-form__wrapper application-form__wrapper--options">
-              <fieldset class="application-form__group application-form__group--radiobutton">
+              <fieldset class="application-form__group application-form__group--radiobutton container">
                 <legend class="visually-hidden">Выбор опции</legend>
                 <ul class="application-form__group-list application-form__group-list--radiobutton">
                   <li class="application-form__radiobutton">
@@ -85,7 +89,7 @@ content="width=device-width, initial-scale=1">
             </div>
           </div>
           <div class="application-form__wrapper application-form__wrapper--owner">
-            <fieldset class="application-form__group">
+            <fieldset class="application-form__group container">
               <legend class="application-form__owner">Контактные данные (владельца кота)</legend>
               <div class="application-form__owner--part">
                 <div class="application-form__input application-form__input--email">
@@ -100,7 +104,7 @@ content="width=device-width, initial-scale=1">
             </fieldset>
           </div>
           <div class="application-form__wrapper application-form__wrapper--comments">
-            <fieldset class="application-form__group">
+            <fieldset class="application-form__group container">
               <legend class="application-form__comments">Комментарий</legend>
                 <div class="application-form__input application-form__input--comments">
                   <label class="application-form__label" for="info-cat"></label>
@@ -109,7 +113,7 @@ content="width=device-width, initial-scale=1">
             </fieldset>
           </div>
           <div class="application-form__wrapper application-form__wrapper--additional">
-            <fieldset class="application-form__group application-form__group--checkbox">
+            <fieldset class="application-form__group application-form__group--checkbox container">
               <legend class="application-form__additional">Дополнительно</legend>
               <ul class="application-form__group-list application-form__group-list--checkbox">
                 <li class="application-form__checkbox application-form__checkbox--sugar">
@@ -139,7 +143,7 @@ content="width=device-width, initial-scale=1">
               </ul>
             </fieldset>
           </div>
-          <div class="application-form__send">
+          <div class="application-form__send container">
             <button class="application-form__button button application-form__button--green" type="submit">Отправить заявку</button>
             <p class="application-form__notes"><sup>*</sup>- Обязательные поля</p>
           </div>
@@ -203,6 +207,6 @@ content="width=device-width, initial-scale=1">
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

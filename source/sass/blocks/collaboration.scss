@@ -50,16 +50,20 @@
 
   .collaboration__slogan {
     padding-left: 20px;
-    margin-right: 2px;
+    margin: 56px 140px 56px 70px;
   }
 
   .collaboration__address {
     align-items: center;
     justify-self: end;
+    margin: 56px 70px 56px 140px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .collaboration__data {
+    position: relative;
+  }
   .collaboration__slogan {
     padding-left: 20px;
     margin-right: 2px;
@@ -71,9 +75,19 @@
   .collaboration__wrapper {
     justify-content: space-between;
     height: 198px;
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffff;
+    width: 565px;
+    margin-top: 95px;
+    margin-left: 110px;
+  }
+
+  .collaboration__slogan {
+    margin: 59px 43px 56px 80px;
   }
 
   .collaboration__address {
-    padding-right: 180px;
+    margin: 56px 63px 56px 43px;
   }
 }
