@@ -168,8 +168,26 @@
     padding-bottom: 101px;
   }
 
-  .experience__image {
-    margin-left: 200px;
+  .experience__fat {
+    background-color: #eaeaea;
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  .experience__before {
+    width: 560px;
+    height: 512px;
+    max-width: none;
+  }
+
+  .experience__slim {
+    width: 560px;
+    height: 512px;
+  }
+
+  .experience__after {
+    width: 100%;
   }
 }
 
@@ -201,9 +219,5 @@
 
   .experience__example {
     margin-left: 110px;
-  }
-
-  .experience__image {
-    padding-left: 200px;
   }
 }
