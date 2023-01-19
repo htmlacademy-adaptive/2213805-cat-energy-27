@@ -1,17 +1,17 @@
 @media (max-width: $mobile-width-only) {
-  .catalog-container{
+  .catalog-container {
     border-top: 1px solid #ebebeb;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-container{
+  .catalog-container {
     border-top: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .catalog-container{
+  .catalog-container {
     border-top: none;
   }
 }
