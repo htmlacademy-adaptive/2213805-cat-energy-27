@@ -46,8 +46,12 @@ content="width=device-width, initial-scale=1">
           <p class="promotion__slogan">Занялся собой? Займись котом!</p>
         </div>
         <div class="promotion__image">
-          <img class="promotion__product" src="/img/images-mobile/can-image.png" width="280" height="270" alt="Еда для кота.">
-          <span class="promotion__background">
+          <picture>
+            <source media="(min-width: 768px)" srcset="/img/images-tablet/can-tablet.png 1x /img/images-tablet/can-tablet@2x.png 2x">
+            <source media="(min-width: 1440px)" srcset="/img/images-desktop/can-desktop.png 1x /img/images-desktop/can-desktop@2x.png 2x">
+            <img class="promotion__product" src="/img/images-mobile/can-image.png" srcset="/img/images-mobile/can-mobile@2x.png 2x" width="280" height="270" alt="Еда для кота.">
+            <span class="promotion__background">
+          </picture>
         </div>
           </span>
           <div class="promotion__program">
@@ -99,28 +103,32 @@ content="width=device-width, initial-scale=1">
     <section class="experience">
       <div class="experience__wrapper container">
         <h2 class="experience__slogan">Живой пример</h2>
-        <p class="experience__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-          обычный корм на Cat Energy Slim. Отличный результат
-          без изнуряющих тренировок! При этом он не менял своих
-          привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="experience__part">
-          <div class="experience__example">
-            <dl class="experience__list">
-              <div class="experience__item">
-                <dt class="experience__number">5 кг
-                </dt>
-                <dd class="experience__description">снижение веса</dd>
+        <div class="experience__fatslim">
+          <div class="experience__part">
+            <p class="experience__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+              обычный корм на Cat Energy Slim. Отличный результат
+              без изнуряющих тренировок! При этом он не менял своих
+              привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <div class="experience__example">
+              <dl class="experience__list">
+                <div class="experience__item experience__item--slim">
+                  <dt class="experience__number">5 кг
+                  </dt>
+                  <dd class="experience__description">снижение веса</dd>
+                </div>
+                <div class="experience__item">
+                  <dt class="experience__number">60 дней
+                  </dt>
+                  <dd class="experience__description">затрачено времени</dd>
+                </div>
+              </dl>
+              <div class="experience__expenses">
+                <p class="experience__spent">затраты на питание:
+                </p>
+                <p class="experience__amount">15 000 руб.
+                </p>
               </div>
-              <div class="experience__item">
-                <dt class="experience__number">60 дней
-                </dt>
-                <dd class="experience__description">затрачено времени</dd>
-              </div>
-            </dl>
-            <div class="experience__expenses">
-              <p class="experience__spent">затраты на питание:15 000 руб.
-              </p>
             </div>
           </div>
           <div class="experience__image">

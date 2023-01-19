@@ -16,10 +16,27 @@
 }
 
 .social__link:hover {
-  background-color: #68b738;
+  svg path {
+    background-color: #68b738;
+  }
 }
 
-.social__link:active {
-  background-color: #68b738;
-  opacity: 0.3;
+.social__link:disabled {
+  svg path {
+    background-color: #68b738;
+    opacity: 0.3;
+  }
+}
+
+.copyright__image:hover {
+  svg path {
+    fill: #68b738;
+  }
+}
+
+.copyright__image:disabled {
+  svg path {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
