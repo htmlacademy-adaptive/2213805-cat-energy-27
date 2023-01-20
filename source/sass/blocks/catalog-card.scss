@@ -76,7 +76,6 @@
   color: #000000;
   position: relative;
   order: 2;
-  margin-top: 89px;
   margin-bottom: 8px;
 }
 
@@ -182,6 +181,8 @@
     background-color: #ffffff;
     color: #000000;
     outline: 2px solid #f2f2f2;
+    margin-top: 89px;
+    height: 429px;
   }
 
   .catalog-card {
@@ -201,5 +202,9 @@
 
   .catalog-card__item {
     width: 165px;
+  }
+
+  .catalog-card--more {
+    height: 431px;
   }
 }

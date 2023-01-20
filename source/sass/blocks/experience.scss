@@ -21,7 +21,6 @@
 }
 
 .experience__list {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -61,7 +60,7 @@
   font-weight: 400;
   position: absolute;
   bottom: -10px;
-  background-color: #eaeaea;
+  background-color: #f2f2f2;
   text-align: center;
   width: 77px;
   left: -12px;
@@ -85,11 +84,27 @@
 
 .experience__image {
   position: relative;
+  width: 560px;
+  height: 512px;
+}
+.experience__fat, .experience__slim {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 50%;
+}
+.experience__fat {
+  left: 0;
 }
 
-.experience__fat {
+.experience__slim {
+  right: 0;
+}
+
+.experience__slider {
+  height: 100%;
   position: absolute;
-  overflow: hidden;
+  left: calc(50% - 20px);
 }
 
 @media (max-width: $mobile-width-only) {
@@ -161,20 +176,15 @@
     flex-wrap: wrap;
   }
 
-  .experience__list {
-    width: 50%;
-  }
-
   .experience__part {
     padding-bottom: 101px;
   }
 
-  .experience__fat {
-    background-color: #eaeaea;
-    position: absolute;
-    overflow: hidden;
-    width: 50%;
-  }
+  // .experience__fat {
+  //   position: absolute;
+  //   overflow: hidden;
+  //   width: 50%;
+  // }
 
   .experience__before {
     width: 560px;
@@ -182,20 +192,23 @@
     max-width: none;
   }
 
-  .experience__slim {
-    width: 560px;
-    height: 512px;
-  }
+  // .experience__slim {
+  //   width: 560px;
+  //   height: 512px;
+  // }
 
   .experience__after {
-    width: 100%;
+    width: 560px;
+    height: 512px;
+    max-width: none;
+    float: right;
   }
 }
 
 @media (min-width: $desktop-width) {
   .experience {
     border-top: none;
-    background: linear-gradient(to bottom, #ffffff 136px, #e5e5e5 136px, #e5e5e5);
+    background: linear-gradient(to bottom,#fff 136px,#f2f2f2 136px,#f2f2f2);
   }
 
   .experience__wrapper {
@@ -208,17 +221,49 @@
     justify-content: center;
   }
 
-  .experience__text {
-    margin: 146px 224px 29px 110px;
+  .experience__fatslim {
+    display: flex;
+    justify-content: space-between;
   }
+
+  // .experience__text {
+  //   margin: 146px 338px 29px 110px;
+  // }
 
   .experience__part {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 598px;
+  }
+
+  .experience__text {
+    margin-left: 110px;
+  }
+
+  .experience__item {
+    width: 162px;
+  }
+
+  .experience__item--slim {
+    margin-right: 42px;
   }
 
   .experience__example {
     margin-left: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .experience__expenses {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .experience__amount {
+    align-self: center;
+    margin-right: 50px;
   }
 }
