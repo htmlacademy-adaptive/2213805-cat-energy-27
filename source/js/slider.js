@@ -39,4 +39,3 @@ document.addEventListener("mousemove", function (event) {
     bottomEl.style.width = `${mouse.positionX - left}px`;
   }
 });
-

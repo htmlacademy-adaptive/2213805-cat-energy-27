@@ -342,7 +342,7 @@
   .application-form__send {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 71px;
+    justify-content: space-evenly;
     flex-direction: row;
   }
 }
@@ -351,7 +351,7 @@
   .application-form__group-list--checkbox {
     display: flex;
     flex-wrap: wrap;
-    margin: 57px 205px 61px 110px;
+    margin: 57px 205px 61px 55px;
     padding: 0;
     justify-content: space-between;
     width: 1200px;
@@ -385,7 +385,7 @@
 
   .application-form__wrapper--cat {
     margin-bottom: 72px;
-    margin-left: 71px;
+    margin-left: 31px;
     margin-right: 80px;
   }
 
@@ -428,5 +428,13 @@
   .application-form__button--green {
     width: 568px;
     height: 52px;
+    margin-left: 55px;
+  }
+
+  .application-form__send {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
   }
 }
