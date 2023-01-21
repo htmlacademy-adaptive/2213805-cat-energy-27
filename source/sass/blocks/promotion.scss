@@ -89,7 +89,7 @@
 @media (min-width: $tablet-width) {
   .promotion__name {
     margin-left: 117px;
-    margin-top: 62px;
+    padding-right: 100px;
   }
 
   .promotion__slogan {
@@ -105,6 +105,15 @@
   .promotion__image {
     display: flex;
     justify-content: center;
+    width: 709px;
+    height: auto;
+    margin-top: 90px;
+    margin-left: 80px;
+  }
+
+  .promotion__product {
+    margin: -50px;
+    width: 100%;
   }
 
   .promotion__program {
@@ -134,7 +143,15 @@
   }
 
   .promotion__product {
-    margin: 50px;
+    margin: -50px;
+    width: 100%;
+  }
+
+  .promotion__image {
+    height: auto;
+    width: 552px;
+    margin-top: 90px;
+    margin-left: -100px;
   }
 
   .promotion__advert {

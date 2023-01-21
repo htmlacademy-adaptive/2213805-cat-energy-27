@@ -1,22 +1,16 @@
 .catalog__wrapper {
   display: flex;
+  justify-content: center;
 }
 
 .catalog__card {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 @media (max-width: $mobile-width-only) {
-  .catalog__options {
-    width: 320px;
-  }
-
-  .catalog__wrapper {
-    width: 320px;
-  }
-
   .catalog__list {
     display: flex;
     flex-direction: column;

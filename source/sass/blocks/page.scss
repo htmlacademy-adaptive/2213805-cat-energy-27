@@ -18,6 +18,7 @@
   .page__body--image::before {
     background-image: url("/img/images-desktop/cat-green-desktop.png");
     background-repeat: no-repeat;
+    background-size: contain;
     width: 50%;
     position: absolute;
     bottom: 0;

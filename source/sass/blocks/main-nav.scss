@@ -43,7 +43,7 @@
   }
 
   .main-nav--closed {
-    height: 0;
+    display: none;
   }
 
   .main-nav__toggle {
@@ -60,8 +60,16 @@
     background-color: transparent;
   }
 
+  .main-nav__toggle--nojs {
+    display: none;
+  }
+
   .main-nav__toggle.active {
     background: url("/img/images-mobile/close-icon.svg") center no-repeat;
+  }
+
+  .main-nav--closed .main-nav__toggle--nojs {
+    display: none;
   }
 
   .site-list a {
@@ -103,10 +111,6 @@
     width: 7px;
     height: 100%;
     box-shadow: inset 4px 0 7px -2px fade(#000000, 40%);
-  }
-
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
   }
 
   .main-nav--nojs .main-nav__wrapper {
