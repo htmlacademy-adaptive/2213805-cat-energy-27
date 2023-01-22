@@ -28,7 +28,7 @@
 }
 
 .application-form__label {
-  margin-left: 20px;
+  // margin-left: 20px;
   align-self: center;
 }
 
@@ -44,6 +44,18 @@
   padding-left: 20px;
   padding-bottom: 13px;
   flex-grow: 1;
+
+  &:hover {
+    outline: 1px solid #E7E7E7;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #FF8282;
+  }
 }
 
 .application-form__group-list {
@@ -76,9 +88,9 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .application-form {
-    margin: 20px;
-  }
+  // .application-form {
+  //   margin: 20px;
+  // }
 
   // .application-form__wrapper {
   //   display: flex;
@@ -92,7 +104,15 @@
 
   .application-form__input {
     margin-bottom: 14px;
-    margin-left: 20px;
+    // margin-left: 20px;
+  }
+
+  .application-form__group {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .application-form__wrapper--options {
@@ -112,15 +132,6 @@
     border-top: 2px solid #68b738;
   }
 
-  .application-form__owner {
-    position: absolute;
-    top: -10px;
-    padding-right: 14px;
-    background-color: #ffffff;
-    padding-left: 0;
-    text-transform: none;
-  }
-
   .application-form__owner--part {
     margin-top: 34px;
   }
@@ -138,12 +149,12 @@
     width: 100%;
   }
 
-  .application-form__comments {
+  .application-form__title {
     position: absolute;
     top: -10px;
+    left: 39px;
     background-color: #ffffff;
-    padding-left: 0;
-    padding-right: 22px;
+    padding: 0 11px;
     text-transform: none;
   }
 
@@ -165,16 +176,6 @@
   .application-form__wrapper--additional {
     border-top: 2px solid #68b738;
     width: 100%;
-  }
-
-  .application-form__additional {
-    position: absolute;
-    top: -10px;
-    background-color: #ffffff;
-    padding-left: 0;
-    padding-right: 23px;
-    text-transform: none;
-    visibility: visible;
   }
 
   .application-form__group-list--checkbox {
@@ -252,24 +253,12 @@
     width: 100%;
   }
 
-  .application-form__owner {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    background-color: #ffffff;
-    padding-left: 39px;
-    padding-right: 42px;
-    text-transform: none;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
   .application-form__input--email {
-    margin: 76px 66px 20px 51px;
+    margin: 76px 66px 20px 71px;
   }
 
   .application-form__input--phone {
-    margin: 0 66px 65px 55px;
+    margin: 0 66px 65px 71px;
   }
 
   .application-form__wrapper--comments {
@@ -277,7 +266,7 @@
     width: 100%;
   }
 
-  .application-form__comments {
+  .application-form__title {
     position: absolute;
     top: -20px;
     left: 20px;
@@ -303,18 +292,6 @@
   .application-form__wrapper--additional {
     border-top: 2px solid #68b738;
     width: 100%;
-  }
-
-  .application-form__additional {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    background-color: #ffffff;
-    padding-left: 40px;
-    padding-right: 41px;
-    text-transform: none;
-    font-size: 36px;
-    line-height: 36px;
   }
 
   .application-form__group-list--checkbox {

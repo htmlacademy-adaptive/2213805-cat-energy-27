@@ -54,11 +54,11 @@ content="width=device-width, initial-scale=1">
                 </div>
                 <div class="application-form__input">
                   <label class="application-form__label" for="weight__cat">Вес (кг):<sup>*</sup></label>
-                  <input class="application-form__field" type="text" name="weight__cat" id="weight__cat" value="7" placeholder="Укажите вес" required>
+                  <input class="application-form__field" type="number" name="weight__cat" id="weight__cat" value="7" placeholder="Укажите вес" required>
                 </div>
                 <div class="application-form__input">
                   <label class="application-form__label" for="age__cat">Возраст:<sup>*</sup></label>
-                  <input class="application-form__field" type="text" name="age__cat" id="age__cat" value="7" placeholder="Укажите возраст" required>
+                  <input class="application-form__field" type="number" name="age__cat" id="age__cat" value="7" placeholder="Укажите возраст" required>
                 </div>
               </fieldset>
             </div>
@@ -90,22 +90,22 @@ content="width=device-width, initial-scale=1">
           </div>
           <div class="application-form__wrapper application-form__wrapper--owner">
             <fieldset class="application-form__group container">
-              <legend class="application-form__owner">Контактные данные (владельца кота)</legend>
+              <legend class="application-form__title">Контактные данные (владельца кота)</legend>
               <div class="application-form__owner--part">
                 <div class="application-form__input application-form__input--email">
                   <label class="application-form__label" for="email__owner">e-mail:<sup>*</sup></label>
-                  <input class="application-form__field" autocomplete="email" name="data__email" id="email__owner" value="Kuklachev@gmail.com" placeholder="Укажите email" required>
+                  <input class="application-form__field" type="email" autocomplete="email" name="data__email" id="email__owner" value="Kuklachev@gmail.com" placeholder="Укажите email" required>
                 </div>
                 <div class="application-form__input application-form__input--phone">
                   <label class="application-form__label" for="phone__owner">Телефон:<sup>*</sup></label>
-                  <input class="application-form__field" autocomplete="tel" name="data__phone" id="phone__owner" value="8(960)900-60-90" placeholder="Укажите телефон" required>
+                  <input class="application-form__field" type="tel" pattern="[8][\(][0-9]{3}[\)])[0-9]{3}[\-][0-9]{2}[\-][0-9]{2}" autocomplete="tel" name="data__phone" id="phone__owner" value="8(960)900-60-90" placeholder="Укажите телефон" required>
                 </div>
               </div>
             </fieldset>
           </div>
           <div class="application-form__wrapper application-form__wrapper--comments">
             <fieldset class="application-form__group container">
-              <legend class="application-form__comments">Комментарий</legend>
+              <legend class="application-form__title">Комментарий</legend>
                 <div class="application-form__input application-form__input--comments">
                   <label class="application-form__label" for="info-cat"></label>
                   <textarea class="application-form__textarea" name="info-cat" id="info-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -114,7 +114,7 @@ content="width=device-width, initial-scale=1">
           </div>
           <div class="application-form__wrapper application-form__wrapper--additional">
             <fieldset class="application-form__group application-form__group--checkbox container">
-              <legend class="application-form__additional">Дополнительно</legend>
+              <legend class="application-form__title">Дополнительно</legend>
               <ul class="application-form__group-list application-form__group-list--checkbox">
                 <li class="application-form__checkbox application-form__checkbox--sugar">
                   <label class="application-form__label-checkbox">

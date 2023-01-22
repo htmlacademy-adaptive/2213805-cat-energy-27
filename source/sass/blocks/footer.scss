@@ -24,9 +24,10 @@
 }
 
 .footer__copyright {
-  margin: 22px 20px 22px 19px;
+  padding: 22px 20px 22px 19px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -57,7 +58,7 @@
   }
 
   .footer__copyright {
-    margin: 22px 20px 22px 19px;
+    padding: 22px 20px 22px 19px;
     display: flex;
     justify-content: space-between;
   }

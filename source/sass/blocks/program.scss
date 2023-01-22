@@ -25,17 +25,24 @@
   .program__title {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 20px;
   }
 
   .program__text {
     font-size: 14px;
     line-height: 18px;
-    margin-left: 20px;
+    margin-right: 74px;
   }
 
   .program__content {
     margin-bottom: 32px;
+  }
+
+  .program__name {
+    padding-left: 20px;
+  }
+
+  .program__slogan {
+    padding-left: 20px;
   }
 }
 
