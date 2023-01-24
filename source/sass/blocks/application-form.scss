@@ -113,18 +113,15 @@
     width: 0;
   }
 
-  .application-form__input-radiobutton {
-    :checked ~ .application-form__checkmark {
-      &:after {
-        display: block;
-      }
+  .application-form__input-radiobutton:checked ~ .application-form__checkmark {
+    &::after {
+      display: block;
     }
+  }
 
-  .application-form__input-radiobutton {
-    :disabled ~ .application-form__checkmark {
-      &:after {
-        opacity: .3;
-      }
+  .application-form__input-radiobutton:disabled ~ .application-form__checkmark {
+    &::after {
+      opacity: 0.3;
     }
   }
 
@@ -141,7 +138,7 @@
     border: 1px solid #cdcdcd;
     border-radius: 50%;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       display: none;
@@ -166,9 +163,6 @@
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
   }
 
@@ -178,17 +172,17 @@
     cursor: pointer;
     height: 0;
     width: 0;
+  }
 
-    &:checked ~ .application-form__checkmark {
-      &:after {
-        display: block;
-      }
+  .application-form__input-checkbox:checked ~ .application-form__checkmark {
+    &::after {
+      display: block;
     }
+  }
 
-    &:disabled ~ .application-form__checkmark {
-      &:after {
-        opacity: .3;
-      }
+  .application-form__input-checkbox:disabled ~ .application-form__checkmark {
+    &::after {
+      opacity: 0.3;
     }
   }
 
@@ -200,7 +194,7 @@
     width: 40px;
     border: 1px solid #cdcdcd;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       display: none;
@@ -210,8 +204,8 @@
       height: 57%;
       border: solid #68b738;
       border-width: 0 3px 3px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
+      // -webkit-transform: rotate(45deg);
+      // -ms-transform: rotate(45deg);
       transform: rotate(45deg);
       // background: url("../../img/images-tablet/checkbox-checked.svg");
     }
@@ -223,23 +217,8 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  // .application-form {
-  //   margin: 20px;
-  // }
-
-  // .application-form__wrapper {
-  //   display: flex;
-  //   flex-grow: 1;
-  //   margin: 66px 67px 72px 71px;
-  // }
-
-  // .application-form__wrapper--cat {
-  //   margin: 29px 0 24px 0;
-  // }
-
   .application-form__input {
     margin-bottom: 14px;
-    // margin-left: 20px;
   }
 
   .application-form__group {
