@@ -11,7 +11,7 @@ content="width=device-width, initial-scale=1">
   <header class="main-header container">
     <a class="main-header__logo">
     </a>
-    <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
+    <button class="main-header__toggle main-header__toggle--nojs" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -69,20 +69,23 @@ content="width=device-width, initial-scale=1">
                   <li class="application-form__radiobutton">
                     <label class="application-form__label-radiobutton">
                       <input class="application-form__input-radiobutton" type="radio" name="choice__group" value="slim" checked>
-                        <span class="application-form__text-radiobutton">Похудение</span>
+                        <span class="application-form__checkmark"></span>
                     </label>
+                    <span class="application-form__text-radiobutton">Похудение</span>
                   </li>
                   <li class="application-form__radiobutton">
                     <label class="application-form__label-radiobutton">
                       <input class="application-form__input-radiobutton" type="radio" name="choice__group" value="gain">
-                        <span class="application-form__text-radiobutton">Набор массы</span>
+                        <span class="application-form__checkmark"></span>
                     </label>
+                    <span class="application-form__text-radiobutton">Набор массы</span>
                   </li>
                   <li class="application-form__radiobutton">
                     <label class="application-form__label-radiobutton">
                       <input class="application-form__input-radiobutton" type="radio" name="choice__group" value="advice">
-                        <span class="application-form__text-radiobutton">Не знаю (нужен ваш совет)</span>
+                        <span class="application-form__checkmark"></span>
                     </label>
+                    <span class="application-form__text-radiobutton">Не знаю (нужен ваш совет)</span>
                   </li>
                 </ul>
               </fieldset>
@@ -91,7 +94,7 @@ content="width=device-width, initial-scale=1">
           <div class="application-form__wrapper application-form__wrapper--owner">
             <fieldset class="application-form__group container">
               <legend class="application-form__title">Контактные данные (владельца кота)</legend>
-              <div class="application-form__owner--part">
+              <div class="application-form__owner application-form__owner--part">
                 <div class="application-form__input application-form__input--email">
                   <label class="application-form__label" for="email__owner">e-mail:<sup>*</sup></label>
                   <input class="application-form__field" type="email" autocomplete="email" name="data__email" id="email__owner" value="Kuklachev@gmail.com" placeholder="Укажите email" required>
@@ -119,26 +122,30 @@ content="width=device-width, initial-scale=1">
                 <li class="application-form__checkbox application-form__checkbox--sugar">
                   <label class="application-form__label-checkbox">
                     <input class="application-form__input-checkbox" type="checkbox" name="add__products" value="substitute" checked>
-                    <span class="application-form__text-checkbox">Сахарозаменитель</span>
+                    <span class="application-form__checkmark"></span>
                   </label>
+                  <span class="application-form__text-checkbox">Сахарозаменитель</span>
                 </li>
                 <li class="application-form__checkbox">
                   <label class="application-form__label-checkbox">
                     <input class="application-form__input-checkbox" type="checkbox" name="add__products" value="water">
-                    <span class="application-form__text-checkbox">Питьевая вода</span>
+                    <span class="application-form__checkmark"></span>
                   </label>
+                  <span class="application-form__text-checkbox">Питьевая вода</span>
                 </li>
                 <li class="application-form__checkbox application-form__checkbox--milk">
                   <label class="application-form__label-checkbox">
                     <input class="application-form__input-checkbox" type="checkbox" name="add__products" value="milk">
-                    <span class="application-form__text-checkbox">Молоко</span>
+                    <span class="application-form__checkmark"></span>
                   </label>
+                  <span class="application-form__text-checkbox">Молоко</span>
                 </li>
                 <li class="application-form__checkbox">
                   <label class="application-form__label-checkbox">
                     <input class="application-form__input-checkbox" type="checkbox" name="add__products" value="vitamin">
-                    <span class="application-form__text-checkbox">Витамины</span>
+                    <span class="application-form__checkmark"></span>
                   </label>
+                  <span class="application-form__text-checkbox">Витамины</span>
                 </li>
               </ul>
             </fieldset>

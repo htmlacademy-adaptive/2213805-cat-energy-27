@@ -1,14 +1,14 @@
 .additional-card__title {
   display: flex;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
 }
 
 .additional-card__name {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -40,44 +40,7 @@
   color: #444444;
 }
 
-@media (max-width: $mobile-width-only) {
-  .additional__card__button--main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #68b738;
-    border-style: none;
-    font-family: "Oswald", sans-serif;
-    height: 40px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none;
-    margin-bottom: 14px;
-  }
-}
-
 @media (min-width: $tablet-width) {
-  .additional__card__button--main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #68b738;
-    border-style: none;
-    font-family: "Oswald", sans-serif;
-    height: 40px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none;
-    margin-bottom: 14px;
-    width: 632px;
-  }
-
   .additional-card__wrapper {
     margin-bottom: 0;
     width: 50%;
@@ -100,10 +63,6 @@
   .additional-card__order {
     display: flex;
     margin-left: 40px;
-  }
-
-  .additional__card__button--main {
-    width: 244px;
   }
 
   .additional-card__wrapper {

@@ -3,7 +3,7 @@
 }
 
 .application-form__group {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -16,7 +16,7 @@
 }
 
 .application-form__input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -33,7 +33,7 @@
 }
 
 .application-form__field {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -69,7 +69,7 @@
   align-items: center;
   background-color: #68b738;
   border-style: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -86,6 +86,184 @@
   background-color: #5eaa2f;
   opacity: 0.3;
 }
+
+.application-form__radiobutton {
+  display: flex;
+  height: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .application-form__label-radiobutton {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .application-form__input-radiobutton {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .application-form__checkmark {
+      &:after {
+        display: block;
+      }
+    }
+
+    &:disabled ~ .application-form__checkmark {
+      &:after {
+        opacity: .3;
+      }
+    }
+  }
+
+  .application-form__checkmark {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #CDCDCD;
+    border-radius: 50%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 8px;
+      left: 8px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #68B738;
+    }
+  }
+
+  .application-form__text-radiobutton {
+    margin-left: 15px;
+  }
+}
+
+.application-form__checkbox {
+  display: flex;
+  height: 40px;
+
+  .application-form__label-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .application-form__input-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .application-form__checkmark {
+      &:after {
+        display: block;
+      }
+    }
+
+    &:disabled ~ .application-form__checkmark {
+      &:after {
+        opacity: .3;
+      }
+    }
+  }
+
+  .application-form__checkmark {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #CDCDCD;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 2px;
+      left: 12px;
+      width: 33%;
+      height: 57%;
+      border: solid #68B738;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      // background: url("../../img/images-tablet/checkbox-checked.svg");
+    }
+  }
+
+  .application-form__text-checkbox {
+    margin-left: 15px;
+  }
+}
+
+// .application-form__input-radiobutton[type="radio"]:checked+ .application-form__checkmark::before {
+//   position: absolute;
+//   width: 30px;
+//   height: 30px;
+//   content: "";
+//   top: 5px;
+//   left: 5px;
+//   background-image: url("/img/images-tablet/radiobutton-checked.svg");
+//   background-repeat: no-repeat;
+// }
+
+// .application-form__input-checkbox {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+//   border: 0;
+// }
+
+// .application-form__text-checkbox {
+//   position: absolute;
+//     top: 2px;
+//     left: 0;
+//     width: 20px;
+//     height: 20px;
+//     background-color: #ffffff;
+//     border-radius: 4px;
+//     cursor: pointer;
+// }
+
+// .application-form__input-checkbox[type="radio"]:checked+ .application-form__text-checkbox::before {
+//   position: absolute;
+//   width: 20px;
+//   height: 20px;
+//   content: "";
+//   top: 5px;
+//   left: 4px;
+//   background-image: url("/img/images-tablet/checkbox-checked.svg");
+//   background-repeat: no-repeat;
+// }
 
 @media (max-width: $mobile-width-only) {
   // .application-form {
@@ -112,7 +290,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   .application-form__wrapper--options {
@@ -167,10 +344,15 @@
 
   .application-form__textarea {
     flex-grow: 1;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
   }
 
   .application-form__checkbox {
     margin-bottom: 14px;
+    margin-top: 34px;
   }
 
   .application-form__wrapper--additional {
@@ -287,6 +469,10 @@
 
   .application-form__textarea {
     flex-grow: 1;
+    font-family: "Oswald","Arial",sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
 
   .application-form__wrapper--additional {

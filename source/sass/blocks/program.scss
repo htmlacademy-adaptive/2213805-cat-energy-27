@@ -1,9 +1,5 @@
-.program {
-  border-top: 1px solid #ebebeb;
-}
-
 .program__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
@@ -22,6 +18,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .program {
+    border-top: 1px solid #ebebeb;
+  }
+
   .program__title {
     font-size: 36px;
     line-height: 36px;
@@ -47,6 +47,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .program {
+    border-top: none;
+  }
+
   .program__title {
     text-align: center;
     margin-top: 65px;
