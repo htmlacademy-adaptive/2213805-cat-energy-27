@@ -102,10 +102,7 @@
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    // user-select: none;
   }
 
   .application-form__input-radiobutton {
@@ -114,18 +111,25 @@
     cursor: pointer;
     height: 0;
     width: 0;
+  }
 
-    &:checked ~ .application-form__checkmark {
+  .application-form__input-radiobutton {
+    :checked ~ .application-form__checkmark {
       &:after {
         display: block;
       }
     }
 
-    &:disabled ~ .application-form__checkmark {
+  .application-form__input-radiobutton {
+    :disabled ~ .application-form__checkmark {
       &:after {
         opacity: .3;
       }
     }
+  }
+
+  .application-form__text-radiobutton {
+    margin-left: 15px;
   }
 
   .application-form__checkmark {
@@ -134,7 +138,7 @@
     left: 0;
     height: 30px;
     width: 30px;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
     border-radius: 50%;
 
     &:after {
@@ -146,12 +150,8 @@
       width: 13px;
       height: 13px;
       border-radius: 50%;
-      background: #68B738;
+      background: #68b738;
     }
-  }
-
-  .application-form__text-radiobutton {
-    margin-left: 15px;
   }
 }
 
@@ -198,7 +198,7 @@
     left: 0;
     height: 40px;
     width: 40px;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
 
     &:after {
       content: "";
@@ -208,7 +208,7 @@
       left: 12px;
       width: 33%;
       height: 57%;
-      border: solid #68B738;
+      border: solid #68b738;
       border-width: 0 3px 3px 0;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -221,49 +221,6 @@
     margin-left: 15px;
   }
 }
-
-// .application-form__input-radiobutton[type="radio"]:checked+ .application-form__checkmark::before {
-//   position: absolute;
-//   width: 30px;
-//   height: 30px;
-//   content: "";
-//   top: 5px;
-//   left: 5px;
-//   background-image: url("/img/images-tablet/radiobutton-checked.svg");
-//   background-repeat: no-repeat;
-// }
-
-// .application-form__input-checkbox {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-//   border: 0;
-// }
-
-// .application-form__text-checkbox {
-//   position: absolute;
-//     top: 2px;
-//     left: 0;
-//     width: 20px;
-//     height: 20px;
-//     background-color: #ffffff;
-//     border-radius: 4px;
-//     cursor: pointer;
-// }
-
-// .application-form__input-checkbox[type="radio"]:checked+ .application-form__text-checkbox::before {
-//   position: absolute;
-//   width: 20px;
-//   height: 20px;
-//   content: "";
-//   top: 5px;
-//   left: 4px;
-//   background-image: url("/img/images-tablet/checkbox-checked.svg");
-//   background-repeat: no-repeat;
-// }
 
 @media (max-width: $mobile-width-only) {
   // .application-form {
@@ -469,7 +426,7 @@
 
   .application-form__textarea {
     flex-grow: 1;
-    font-family: "Oswald","Arial",sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
