@@ -3,7 +3,7 @@
 }
 
 .collaboration__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
@@ -11,7 +11,7 @@
 }
 
 .collaboration__address {
-  font-family: "lato", sans-serif;
+  font-family: "lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -25,6 +25,10 @@
     padding: 0;
   }
 
+  .collaboration__wrapper {
+    align-items: center;
+  }
+
   .collaboration__slogan {
     font-size: 16px;
     line-height: 20px;
@@ -33,7 +37,7 @@
   }
 
   .collaboration__address {
-    font-family: "lato", sans-serif;
+    font-family: "lato", "Arial", sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -49,14 +53,13 @@
   }
 
   .collaboration__slogan {
-    padding-left: 20px;
-    margin: 56px 140px 56px 70px;
+    margin: 56px 100px 56px 70px;
   }
 
   .collaboration__address {
     align-items: center;
-    justify-self: end;
-    margin: 56px 70px 56px 140px;
+    margin: 56px 70px 56px 180px;
+    text-align: right;
   }
 }
 
@@ -66,11 +69,9 @@
   }
 
   .collaboration__slogan {
-    padding-left: 20px;
-    margin: 59px 43px 56px 80px;
-    padding-right: 80px;
     display: flex;
     align-self: center;
+    margin: 56px 10px 56px 80px;
   }
 
   .collaboration__wrapper {
@@ -85,6 +86,6 @@
   }
 
   .collaboration__address {
-    margin: 56px 63px 56px 43px;
+    margin: 56px 70px 56px 80px;
   }
 }

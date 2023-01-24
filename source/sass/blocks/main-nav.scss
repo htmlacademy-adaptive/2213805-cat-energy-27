@@ -10,7 +10,7 @@
 }
 
 .main-nav__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -36,6 +36,7 @@
     width: 100%;
     min-height: 198px;
     background-color: #ffffff;
+    z-index: 1;
   }
 
   .main-nav--opened {
@@ -46,7 +47,7 @@
     display: none;
   }
 
-  .main-nav__toggle {
+  .main-header__toggle {
     position: relative;
     padding: 0;
     top: 10px;
@@ -60,15 +61,15 @@
     background-color: transparent;
   }
 
-  .main-nav__toggle--nojs {
+  .main-header__toggle--nojs {
     display: none;
   }
 
-  .main-nav__toggle.active {
+  .main-header__toggle.active {
     background: url("/img/images-mobile/close-icon.svg") center no-repeat;
   }
 
-  .main-nav--closed .main-nav__toggle--nojs {
+  .main-nav--closed .main-header__toggle--nojs {
     display: none;
   }
 
@@ -129,7 +130,7 @@
   }
 
   .main-nav__link {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
@@ -162,12 +163,12 @@
     padding: 0;
   }
 
-  .main-nav__toggle {
+  .main-header__toggle {
     display: none;
   }
 
   .main-nav__link {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -188,7 +189,7 @@
     z-index: 2;
   }
 
-  .main-nav__toggle {
+  .main-header__toggle {
     display: none;
   }
 
@@ -200,7 +201,7 @@
   }
 
   .main-nav__link {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
     line-height: 29px;
     font-weight: 400;

@@ -1,9 +1,5 @@
-.program {
-  border-top: 1px solid #ebebeb;
-}
-
 .program__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
@@ -22,24 +18,39 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .program {
+    border-top: 1px solid #ebebeb;
+  }
+
   .program__title {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 20px;
   }
 
   .program__text {
     font-size: 14px;
     line-height: 18px;
-    margin-left: 20px;
+    margin-right: 74px;
   }
 
   .program__content {
     margin-bottom: 32px;
   }
+
+  .program__name {
+    padding-left: 20px;
+  }
+
+  .program__slogan {
+    padding-left: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .program {
+    border-top: none;
+  }
+
   .program__title {
     text-align: center;
     margin-top: 65px;

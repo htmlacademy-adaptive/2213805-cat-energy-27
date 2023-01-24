@@ -3,7 +3,7 @@
 }
 
 .experience__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
@@ -12,7 +12,7 @@
 }
 
 .experience__text {
-  font-family: "lato", sans-serif;
+  font-family: "lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -41,7 +41,7 @@
 }
 
 .experience__number {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -54,20 +54,20 @@
 }
 
 .experience__description {
-  font-family: "lato", sans-serif;
+  font-family: "lato", "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
   position: absolute;
-  bottom: -10px;
   background-color: #eaeaea;
   text-align: center;
-  width: 77px;
-  left: -12px;
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .experience__spent {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -155,6 +155,7 @@
     flex-wrap: nowrap;
     width: 280px;
     height: 256px;
+    margin: 0 20px 0 20px;
   }
 
   .experience__example {
@@ -228,17 +229,12 @@
   }
 
   .experience__description {
-    font-family: "lato", sans-serif;
     font-size: 14px;
     line-height: 14px;
-    font-weight: 400;
-    position: absolute;
-    bottom: -5px;
     background-color: #ffffff;
-    text-align: center;
-    display: flex;
-    box-sizing: border-box;
-    width: 162px;
+    padding: 0 7px;
+    margin: 0;
+    white-space: nowrap;
   }
 
   .experience__example {
@@ -267,6 +263,7 @@
   .experience__image {
     width: 560px;
     height: 512px;
+    margin: 0 104px;
   }
 
   // .experience__slim {

@@ -1,6 +1,9 @@
-.footer__part {
+.footer {
   background-color: #f2f2f2;
-  width: 100%;
+}
+
+.footer__part {
+  box-sizing: border-box;
 }
 
 .footer__social {
@@ -23,9 +26,10 @@
 }
 
 .footer__copyright {
-  margin: 22px 20px 22px 19px;
+  padding: 22px 20px 22px 19px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -56,7 +60,7 @@
   }
 
   .footer__copyright {
-    margin: 22px 20px 22px 19px;
+    padding: 22px 20px 22px 19px;
     display: flex;
     justify-content: space-between;
   }
