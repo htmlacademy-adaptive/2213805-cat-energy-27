@@ -31,7 +31,7 @@
 .experience__item {
   border: #cdcdcd 1px solid;
   width: 124px;
-  min-height: 70px;
+  // height: 70px;
   border-radius: 3px;
   position: relative;
 }
@@ -61,12 +61,11 @@
   position: absolute;
   background-color: #eaeaea;
   text-align: center;
-  top: 97%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 8px 30px 10px 30px;
+  margin: 0;
 }
 
-.experience__spent {
+.experience__spent, .experience__amount {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -75,6 +74,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
 .experience__before::after {
@@ -148,6 +148,7 @@
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 10px;
   }
 
   .experience__image {
@@ -155,7 +156,7 @@
     flex-wrap: nowrap;
     width: 280px;
     height: 256px;
-    margin: 0 20px 0 20px;
+    margin: 20px;
   }
 
   .experience__example {
@@ -165,7 +166,12 @@
 
   .experience__expenses {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .experience__spent {
+    margin-right: 3px;
   }
 
   .experience__amount {

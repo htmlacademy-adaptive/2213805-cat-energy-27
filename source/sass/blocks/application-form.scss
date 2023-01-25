@@ -63,7 +63,7 @@
   list-style-type: none;
 }
 
-.application-form__button--green {
+.application-form__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,15 +76,6 @@
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-}
-
-.application-form__button--green:hover {
-  background-color: #5eaa2f;
-}
-
-.application-form__button--green:active {
-  background-color: #5eaa2f;
-  opacity: 0.3;
 }
 
 .application-form__radiobutton {
@@ -127,6 +118,15 @@
 
   .application-form__text-radiobutton {
     margin-left: 15px;
+
+    &:hover {
+      color: #222222;
+    }
+
+    &:disabled {
+      color: #222222;
+      opacity: 0.3;
+    }
   }
 
   .application-form__checkmark {
@@ -137,24 +137,33 @@
     width: 30px;
     border: 1px solid #cdcdcd;
     border-radius: 50%;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      display: none;
-      top: 8px;
-      left: 8px;
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      background: #68b738;
-    }
+  .application-form__checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 8px;
+    left: 8px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #68b738;
   }
 }
 
 .application-form__checkbox {
   display: flex;
   height: 40px;
+
+  &:hover {
+    color: #222222;
+  }
+
+  &:active {
+    color: #222222;
+    opacity: 0.3;
+  }
 
   .application-form__label-checkbox {
     display: block;
@@ -301,7 +310,7 @@
     margin-left: 20px;
   }
 
-  .application-form__button--green {
+  .application-form__button {
     width: 280px;
     height: 40px;
     font-size: 16px;
@@ -431,7 +440,7 @@
     margin-right: 197px;
   }
 
-  .application-form__button--green {
+  .application-form__button {
     width: 282px;
     height: 52px;
     font-size: 20px;
@@ -524,7 +533,7 @@
     line-height: 29px;
   }
 
-  .application-form__button--green {
+  .application-form__button {
     width: 568px;
     height: 52px;
     margin-left: 55px;

@@ -47,28 +47,6 @@
     display: none;
   }
 
-  .main-header__toggle {
-    position: relative;
-    padding: 0;
-    top: 10px;
-    right: 20px;
-    width: 24px;
-    height: 22px;
-    cursor: pointer;
-    justify-self: end;
-    border: none;
-    background: url("/img/images-mobile/toggle-icon.svg") center no-repeat;
-    background-color: transparent;
-  }
-
-  .main-header__toggle--nojs {
-    display: none;
-  }
-
-  .main-header__toggle.active {
-    background: url("/img/images-mobile/close-icon.svg") center no-repeat;
-  }
-
   .main-nav--closed .main-header__toggle--nojs {
     display: none;
   }
@@ -163,10 +141,6 @@
     padding: 0;
   }
 
-  .main-header__toggle {
-    display: none;
-  }
-
   .main-nav__link {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
@@ -187,10 +161,6 @@
     align-items: baseline;
     margin-top: 69px;
     z-index: 2;
-  }
-
-  .main-header__toggle {
-    display: none;
   }
 
   .main-nav__list {
