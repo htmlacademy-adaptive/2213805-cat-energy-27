@@ -40,7 +40,7 @@
   margin: 8px 20px 14px 20px;
 }
 
-.additional__card__button {
+.additional__list .additional__card__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@
     padding-right: 21px;
   }
 
-  .additional__card__button--main {
+  .additional__list .button--green {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@
     padding-right: 35px;
   }
 
-  .additional__card__button--main {
+  .additional__list .button--green {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +169,7 @@
     padding-right: 35px;
   }
 
-  .additional__card__button--main {
+  .additional__list .button--green {
     width: 244px;
   }
 
@@ -198,7 +198,7 @@
     border-right: none;
   }
 
-  .additional__card__button--main {
+  .additional__list .button--green {
     margin-bottom: 0;
   }
 }

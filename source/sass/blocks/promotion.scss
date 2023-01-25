@@ -73,6 +73,10 @@
   .promotion__wrapper {
     background-image: url("/img/images-mobile/cat-index.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/images-mobile/cat-index-mobile@2x.png");
+    }
   }
 
   .promotion__link {
@@ -82,10 +86,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    background-color: rgba(104, 183, 56, 1);
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
     min-height: 40px;
   }
 

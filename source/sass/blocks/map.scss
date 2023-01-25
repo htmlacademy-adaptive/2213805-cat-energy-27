@@ -5,7 +5,13 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .map {
+  .map iframe {
     height: 362px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map iframe {
+    height: 400px;
   }
 }

@@ -17,6 +17,7 @@
 @media (min-width: $desktop-width) {
   .page__body--image::before {
     background-image: url("/img/images-desktop/cat-green-desktop.png");
+    background-color: #68b738;
     background-repeat: no-repeat;
     background-size: contain;
     width: 50%;
@@ -25,6 +26,7 @@
     top: 0;
     right: 0;
     content: "";
+    height: 696px;
   }
 
   .page__body--image {

@@ -4,6 +4,10 @@
   background-image: url("/img/images-catalog/gift.png");
   background-repeat: no-repeat;
   margin: 35px 20px 35px 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/images-mobile/gift-mobile@2x.png");
+  }
 }
 
 .gift__text {
@@ -33,6 +37,10 @@
     background-image: url("/img/images-tablet/gift-tablet.png");
     background-repeat: no-repeat;
     margin: 0 30px 76px 31px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/images-tablet/gift-tablet@2x.png");
+    }
   }
 
   .gift__text {
@@ -52,6 +60,10 @@
     background-image: url("/img/images-desktop/gift-desktop.png");
     background-repeat: no-repeat;
     margin: 80px 109px 86px 79px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/images-desktop/gift-desktop@2x.png");
+    }
   }
 
   .gift__text::before {
