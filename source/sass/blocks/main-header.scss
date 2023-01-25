@@ -4,7 +4,7 @@
   background-color: #ffffff;
   color: #000000;
   padding-top: 11px;
-  padding-bottom: 17px;
+  // padding-bottom: 17px;
   justify-content: center;
 }
 
@@ -22,6 +22,29 @@
     position: relative;
     height: 65px;
   }
+
+  .main-header__toggle {
+    position: relative;
+    padding: 0;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 22px;
+    cursor: pointer;
+    justify-self: end;
+    border: none;
+    background: url("/img/images-mobile/toggle-icon.svg") center no-repeat;
+    background-color: transparent;
+  }
+
+  .main-header__toggle--nojs {
+    display: none;
+  }
+
+  .main-header__toggle.active {
+    background: url("/img/images-mobile/close-icon.svg") center no-repeat;
+  }
+
 }
 
 .main-header__logo:hover {
@@ -39,6 +62,10 @@
     height: 105px;
   }
 
+  .main-header__toggle {
+    display: none;
+  }
+
   .main-header__logo {
     height: 51px;
     width: 174px;
@@ -54,6 +81,11 @@
     height: 111px;
     align-items: center;
   }
+
+  .main-header__toggle {
+    display: none;
+  }
+
 
   .main-header__logo {
     height: 59px;
