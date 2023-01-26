@@ -32,16 +32,3 @@
     opacity: 0.3;
   }
 }
-
-.copyright__image:hover {
-  svg path {
-    fill: #68b738;
-  }
-}
-
-.copyright__image:disabled {
-  svg path {
-    fill: #68b738;
-    opacity: 0.3;
-  }
-}

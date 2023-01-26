@@ -1,12 +1,16 @@
 .copyright__link {
   display: flex;
   // text-decoration: none;
-  // fill: #444444;
   // align-items: center;
   // justify-content: center;
   // font-family: "lato", "Arial", sans-serif;
   // line-height: 19px;
   // font-size: 16px;
+}
+
+  .copyright__link svg {
+    fill: #444444;
+  }
 
   .copyright__link:hover svg {
     fill: #444444;
@@ -17,14 +21,16 @@
   }
 
   .copyright__link:active svg {
-    fill: #444444;
     opacity: 0.3;
   }
-}
 
 .copyright__image {
   display: flex;
   margin-left: 27px;
+}
+
+.copyright__image svg {
+  fill: #444444;
 }
 
 .copyright__image:hover svg {
