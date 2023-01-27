@@ -15,6 +15,8 @@
   border: none;
   background-image: url("/img/images-mobile/mobile-logo.svg");
   background-repeat: no-repeat;
+  margin-left: 20px;
+    margin-bottom: 20px;
 
   &:hover {
     opacity: 0.8;
@@ -28,7 +30,13 @@
 @media (max-width: $mobile-width-only) {
   .main-header {
     position: relative;
-    height: 65px;
+    // height: 65px;
+    flex-direction: column;
+  }
+
+  .main-header__wrapper {
+    display: flex;
+    flex-direction: row;
   }
 
 //одинаковые стили с js и без ниже если доб main-header__toggle--nojs в 36 стр?
@@ -74,6 +82,10 @@
     margin: 0 auto;
     padding: 0;
     height: 105px;
+  }
+
+  .main-header__wrapper {
+    display: flex;
   }
 
   .main-header__toggle {

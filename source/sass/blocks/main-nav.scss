@@ -39,6 +39,11 @@
     z-index: 1;
   }
 
+  .main-nav--nojs {
+    display: block;
+    position: static;
+  }
+
   .main-nav--opened {
     min-height: 198px;
   }

@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta name="viewport"
 content="width=device-width, initial-scale=1">
@@ -13,11 +13,13 @@ content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body page__body--image">
   <header class="main-header container">
-    <a class="main-header__logo">
-    </a>
-    <button class="main-header__toggle main-header__toggle--nojs" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo">
+      </a>
+      <button class="main-header__toggle main-header__toggle--nojs" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--first site-list__item--current">
@@ -48,9 +50,12 @@ content="width=device-width, initial-scale=1">
         </div>
         <div class="promotion__image">
           <picture>
-            <source media="(min-width: 1440px)" srcset="/img/images-desktop/can-desktop.png 1x, /img/images-desktop/can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="/img/images-tablet/can-tablet.png 1x, /img/images-tablet/can-tablet@2x.png 2x">
-            <img class="promotion__product" src="/img/images-mobile/can-image.png" srcset="/img/images-mobile/can-mobile@2x.png 2x" width="280" height="270" alt="Еда для кота.">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/images-desktop/can-desktop.webp 1x, img/images-desktop/can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/images-tablet/can-tablet.webp 1x, img/images-tablet/can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/images-mobile/can-image.webp 1x, img/images-mobile/can-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/images-desktop/can-desktop.png 1x, img/images-desktop/can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/images-tablet/can-tablet.png 1x, img/images-tablet/can-tablet@2x.png 2x">
+            <img class="promotion__product" src="img/images-mobile/can-image.png" srcset="img/images-mobile/can-mobile@2x.png 2x" width="280" height="270" alt="Еда для кота.">
           </picture>
           <span class="promotion__background">
           </span>
@@ -135,12 +140,16 @@ content="width=device-width, initial-scale=1">
           <div class="experience__image">
             <div class="experience__fat">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="/img/images-tablet/cat-tablet-before@1x.webp 1x, /img/images-tablet/cat-tablet-before@2x.webp 2x">
+                <source type="image/webp" srcset="/img/images-mobile/cat-mobile-before@1x.webp 1x, /img/images-mobile/cat-mobile-before@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="/img/images-tablet/cat-tablet-before@1x.png 1x, /img/images-tablet/cat-tablet-before@2x.png 2x">
                 <img class="experience__before" src="/img/images-mobile/cat-mobile-before@1x.png 1x, /img/images-mobile/cat-mobile-before@2x.png 2x" width="280" height="256" alt="Кот до похудения.">
               </picture>
             </div>
             <div class="experience__slim">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="/img/images-tablet/cat-tablet-after@1x.webp 1x, /img/images-tablet/cat-tablet-after@2x.webp 2x">
+                <source type="image/webp" srcset="/img/images-mobile/cat-mobile-after@1x.webp 1x, /img/images-mobile/cat-mobile-after@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="/img/images-tablet/cat-tablet-after@1x.png 1x, /img/images-tablet/cat-tablet-after@2x.png 2x">
                 <img class="experience__after" src="/img/images-mobile/cat-mobile-after@1x.png 1x, /img/images-mobile/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Кот после похудения.">
               </picture>
