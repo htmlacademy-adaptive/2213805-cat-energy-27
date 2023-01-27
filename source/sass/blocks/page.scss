@@ -16,7 +16,7 @@
 
 @media (min-width: $desktop-width) {
   .page__body--image::before {
-    background-image: url("/img/images-desktop/cat-index-desktop.png");
+    background-image: url("img/images-desktop/cat-index-desktop.png");
     background-color: #68b738;
     background-repeat: no-repeat;
     background-size: contain;
@@ -29,7 +29,7 @@
     height: 696px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/images-desktop/cat-ind-desktop@2x.png");
+      background-image: url("img/images-desktop/cat-ind-desktop@2x.png");
     }
   }
 

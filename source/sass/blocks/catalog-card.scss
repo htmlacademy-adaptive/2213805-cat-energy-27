@@ -135,7 +135,7 @@
   }
 
   .catalog-card__title--add::before {
-    content: url("/img/images-mobile/plus.svg");
+    content: url("img/images-mobile/plus.svg");
     order: 1;
     position: absolute;
     top: -60px;
@@ -172,7 +172,7 @@
   }
 
   .catalog-card__title--add::before {
-    content: url("/img/images-catalog/plus-desktop.svg");
+    content: url("img/images-catalog/plus-desktop.svg");
     order: 1;
     position: absolute;
     top: -49px;
@@ -276,7 +276,7 @@
   }
 
   .catalog-card__title--add::before {
-    content: url("/img/images-catalog/plus-desktop.svg");
+    content: url("img/images-catalog/plus-desktop.svg");
     order: 1;
     position: absolute;
     top: -100px;
