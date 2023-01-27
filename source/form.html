@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as "font"> -->
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta name="viewport"
 content="width=device-width, initial-scale=1">
@@ -12,6 +12,8 @@ content="width=device-width, initial-scale=1">
   <header class="main-header container">
     <a class="main-header__logo" href="index.html">
     </a>
+    <label class="main-header__toggle--nojs" for="toggle-checkbox"></label>
+    <input type="checkbox" id="toggle-checkbox"/>
     <button class="main-header__toggle main-header__toggle--nojs" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>

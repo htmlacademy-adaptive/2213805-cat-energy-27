@@ -6,6 +6,10 @@
   padding-top: 11px;
   // padding-bottom: 17px;
   justify-content: center;
+
+  #toggle-checkbox {
+    display: none;
+  }
 }
 
 .main-header__logo {
@@ -31,7 +35,7 @@
     height: 65px;
   }
 
-  .main-header__toggle {
+  .main-header__toggle, .main-header__toggle--nojs {
     position: relative;
     padding: 0;
     top: 0;
@@ -45,7 +49,11 @@
     background-color: transparent;
   }
 
-  .main-header__toggle--nojs {
+  // .main-header__toggle--nojs {
+  //   display: none;
+  // }
+
+  .main-header__toggle--nojs ~ .main-header__toggle {
     display: none;
   }
 
