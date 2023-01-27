@@ -15,6 +15,10 @@
   margin-bottom: 14px;
 }
 
+.catalog-card__button p {
+  text-align: center;
+}
+
 .catalog-card__button:active {
   background-color: #5eaa2f;
 }
@@ -135,7 +139,7 @@
   }
 
   .catalog-card__title--add::before {
-    content: url("img/images-mobile/plus.svg");
+    content: url("../img/images-mobile/plus.svg");
     order: 1;
     position: absolute;
     top: -60px;
@@ -172,7 +176,7 @@
   }
 
   .catalog-card__title--add::before {
-    content: url("img/images-catalog/plus-desktop.svg");
+    content: url("../img/images-catalog/plus-desktop.svg");
     order: 1;
     position: absolute;
     top: -49px;
@@ -264,6 +268,7 @@
     width: 172px;
     height: 196px;
     align-self: center;
+    margin-top: 0;
   }
 
   .catalog-card__link--big {

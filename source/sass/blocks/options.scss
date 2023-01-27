@@ -61,7 +61,7 @@
 .options__program-choice::after {
   width: 32px;
   height: 10px;
-  content: url("img/images-mobile/arrow.svg");
+  content: url("../img/images-mobile/arrow.svg");
   margin-left: 15px;
 }
 
@@ -101,7 +101,7 @@
   }
 
   .options__program-item--slim::before {
-    content: url("img/images-mobile/option-slim.svg");
+    content: url("../img/images-mobile/option-slim.svg");
     position: absolute;
     top: 21px;
     left: 22px;
@@ -114,7 +114,7 @@
   }
 
   .options__program-item--gain::before {
-    content: url("img/images-mobile/option-gain.svg");
+    content: url("../img/images-mobile/option-gain.svg");
     position: absolute;
     top: 24px;
     left: 13px;
@@ -166,14 +166,14 @@
   }
 
   .options__program-item--slim::before {
-    content: url("img/images-tablet/slim-tab.svg");
+    content: url("../img/images-tablet/slim-tab.svg");
     position: absolute;
     top: 65px;
     left: 400px;
   }
 
   .options__program-item--gain::before {
-    content: url("img/images-tablet/gain-tab.svg");
+    content: url("../img/images-tablet/gain-tab.svg");
     position: absolute;
     top: 75px;
     right: 60px;
@@ -223,14 +223,14 @@
   }
 
   .options__program-item--slim::before {
-    content: url("img/images-desktop/slim-desktop.svg");
+    content: url("../img/images-desktop/slim-desktop.svg");
     position: absolute;
     top: 35px;
     left: 45px;
   }
 
   .options__program-item--gain::before {
-    content: url("img/images-desktop/gain-desktop.svg");
+    content: url("../img/images-desktop/gain-desktop.svg");
     position: absolute;
     top: 35px;
     right: 420px;

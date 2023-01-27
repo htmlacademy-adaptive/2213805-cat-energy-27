@@ -36,14 +36,14 @@
     margin-bottom: 20px;
     position: relative;
     margin-left: 80px;
-    height: 60px;
+    min-height: 60px;
     padding-right: 3px;
   }
 
   .advantages__item--nutrition::before {
     width: 60px;
     height: 60px;
-    content: url("img/images-advantage/advantage-natural.svg");
+    content: url("../img/images-advantage/advantage-natural.svg");
     position: absolute;
     left: -80px;
   }
@@ -51,7 +51,7 @@
   .advantages__item--powder::before {
     width: 60px;
     height: 60px;
-    content: url("img/images-advantage/advantage-powder.svg");
+    content: url("../img/images-advantage/advantage-powder.svg");
     position: absolute;
     left: -80px;
   }
@@ -59,7 +59,7 @@
   .advantages__item--economy::before {
     width: 60px;
     height: 60px;
-    content: url("img/images-advantage/advantage-fork.svg");
+    content: url("../img/images-advantage/advantage-fork.svg");
     position: absolute;
     left: -80px;
   }
@@ -67,7 +67,7 @@
   .advantages__item--result::before {
     width: 60px;
     height: 60px;
-    content: url("img/images-advantage/advantage-result.svg");
+    content: url("../img/images-advantage/advantage-result.svg");
     position: absolute;
     left: -80px;
   }
@@ -86,7 +86,7 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     list-style-type: none;
     padding: 0;
     margin-left: 30px;
@@ -101,57 +101,70 @@
     background-repeat: no-repeat;
     background-position: right;
     justify-content: space-around;
-    height: 280px;
+    min-height: 280px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .advantages__description {
+    padding: 120px 0 20px 0;
   }
 
   .advantages__item--nutrition {
     width: 230px;
     margin-right: 97px;
-    background-image: url("img/images-tablet/card-one.svg");
+    background-image: url("../img/images-tablet/card-one.svg");
+    // background-position: right 20% top 15%;
   }
 
   .advantages__item--nutrition::before {
-    content: url("img/images-advantage/advantage-natural.svg");
+    width: 80px;
+    height: 80px;
+    content: url("../img/images-advantage/advantage-nature-desk.svg");
     position: absolute;
-    top: 20px;
+    top: 30px;
   }
 
   .advantages__item--powder {
     width: 246px;
     margin-right: 76px;
-    background-image: url("img/images-tablet/card-two.svg");
+    background-image: url("../img/images-tablet/card-two.svg");
   }
 
   .advantages__item--powder::before {
-    content: url("img/images-advantage/advantage-powder.svg");
+    width: 80px;
+    height: 80px;
+    content: url("../img/images-advantage/adv-powder-desk.svg");
     position: absolute;
-    top: 20px;
+    top: 30px;
   }
 
   .advantages__item--economy {
     width: 247px;
     margin-right: 77px;
-    background-image: url("img/images-tablet/card-three.svg");
+    background-image: url("../img/images-tablet/card-three.svg");
   }
 
   .advantages__item--economy::before {
-    content: url("img/images-advantage/advantage-fork.svg");
+    width: 80px;
+    height: 80px;
+    content: url("../img/images-advantage/adv-fork-desk.svg");
     position: absolute;
-    top: 20px;
+    top: 30px;
   }
 
   .advantages__item--result {
     width: 249px;
     margin-right: 76px;
-    background-image: url("img/images-tablet/card-four.svg");
+    background-image: url("../img/images-tablet/card-four.svg");
   }
 
   .advantages__item--result::before {
-    content: url("img/images-advantage/advantage-result.svg");
+    width: 80px;
+    height: 80px;
+    content: url("../img/images-advantage/adv-result-desk.svg");
     position: absolute;
-    top: 20px;
+    top: 30px;
   }
 
   .advantages__title {
@@ -181,6 +194,8 @@
     flex-direction: row;
     margin-left: 110px;
     margin-right: 110px;
+    flex-wrap: wrap;
+    justify-content: normal;
   }
 
   .advantages__item {
@@ -191,55 +206,67 @@
     background-repeat: no-repeat;
     background-position: right;
     justify-content: space-around;
-    height: 280px;
+    min-height: 280px;
   }
 
   .advantages__item--nutrition {
     width: 230px;
-    margin-right: 0;
-    background-image: url("img/images-tablet/card-one.svg");
+    margin-right: 92px;
+    background-image: url("../img/images-tablet/card-one.svg");
+    // background-position: 50% 50%;
   }
 
   .advantages__item--nutrition::before {
-    content: url("img/images-advantage/advantage-natural.svg");
+    width: 80px;
+    height: 80px;
+    content: url("../img/images-advantage/advantage-nature-desk.svg");
     position: absolute;
-    top: 20px;
+    top: 30px;
   }
 
   .advantages__item--powder {
     width: 246px;
-    margin-right: 0;
-    background-image: url("img/images-tablet/card-two.svg");
+    margin-right: 77px;
+    background-image: url("../img/images-tablet/card-two.svg");
+    background-position: 90%;
   }
 
   .advantages__item--powder::before {
-    content: url("img/images-advantage/advantage-powder.svg");
+    width: 80px;
+    height: 80px;
+    content: url("../img/images-advantage/adv-powder-desk.svg");
     position: absolute;
-    top: 20px;
+    top: 30px;
   }
 
   .advantages__item--economy {
     width: 247px;
-    margin-right: 0;
-    background-image: url("img/images-tablet/card-three.svg");
+    margin-right: 77px;
+    background-image: url("../img/images-tablet/card-three.svg");
+    background-position: 80%;
   }
 
   .advantages__item--economy::before {
-    content: url("img/images-advantage/advantage-fork.svg");
+    width: 80px;
+    height: 80px;
+    content: url("../img/images-advantage/adv-fork-desk.svg");
     position: absolute;
-    top: 20px;
+    top: 30px;
   }
 
   .advantages__item--result {
     width: 249px;
     margin-right: 0;
-    background-image: url("img/images-tablet/card-four.svg");
+    background-image: url("../img/images-tablet/card-four.svg");
+    background-position: 90%;
   }
 
   .advantages__item--result::before {
-    content: url("img/images-advantage/advantage-result.svg");
+    width: 80px;
+    height: 80px;
+    content: url("../img/images-advantage/adv-result-desk.svg");
     position: absolute;
-    top: 20px;
+    top: 30px;
   }
 
   .advantages__title {

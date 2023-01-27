@@ -13,7 +13,7 @@
   width: 191px;
   margin-right: 65px;
   border: none;
-  background-image: url("img/images-mobile/mobile-logo.svg");
+  background-image: url("../img/images-mobile/mobile-logo.svg");
   background-repeat: no-repeat;
   margin-left: 20px;
     margin-bottom: 20px;
@@ -51,7 +51,7 @@
     cursor: pointer;
     justify-self: end;
     border: none;
-    background: url("img/images-mobile/toggle-icon.svg") center no-repeat;
+    background: url("../img/images-mobile/toggle-icon.svg") center no-repeat;
     background-color: transparent;
   }
 
@@ -64,7 +64,7 @@
   }
 
   .main-header__toggle.active {
-    background: url("img/images-mobile/close-icon.svg") center no-repeat;
+    background: url("../img/images-mobile/close-icon.svg") center no-repeat;
   }
 
 }
@@ -95,7 +95,7 @@
   .main-header__logo {
     height: 51px;
     width: 174px;
-    background-image: url("img/images-tablet/logo-tablet.svg");
+    background-image: url("../img/images-tablet/logo-tablet.svg");
     background-repeat: no-repeat;
     margin-right: 90px;
   }
@@ -117,7 +117,7 @@
   .main-header__logo {
     height: 59px;
     width: 202px;
-    background-image: url("img/images-desktop/logo-desktop.svg");
+    background-image: url("../img/images-desktop/logo-desktop.svg");
     background-repeat: no-repeat;
     margin-top: 53px;
     margin-right: 540px;
