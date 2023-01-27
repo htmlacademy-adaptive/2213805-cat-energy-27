@@ -1,10 +1,6 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-header__toggle');
 let navToggleNoJs = document.querySelector('.main-header__toggle--nojs');
-let navToggleCheckbox = document.querySelector('#toggle-checkbox');
-
-// navToggleNoJs.remove();
-// navToggleCheckbox.remove();
 
 navToggle.classList.remove("main-header__toggle--nojs");
 navMain.classList.add('main-nav--closed');

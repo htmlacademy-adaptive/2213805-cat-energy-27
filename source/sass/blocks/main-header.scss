@@ -6,10 +6,6 @@
   padding-top: 11px;
   // padding-bottom: 17px;
   justify-content: center;
-
-  #toggle-checkbox {
-    display: none;
-  }
 }
 
 .main-header__logo {
@@ -35,7 +31,9 @@
     height: 65px;
   }
 
-  .main-header__toggle, .main-header__toggle--nojs {
+//одинаковые стили с js и без ниже если доб main-header__toggle--nojs в 36 стр?
+
+  .main-header__toggle {
     position: relative;
     padding: 0;
     top: 0;
@@ -49,9 +47,9 @@
     background-color: transparent;
   }
 
-  // .main-header__toggle--nojs {
-  //   display: none;
-  // }
+  .main-header__toggle--nojs {
+    display: none;
+  }
 
   .main-header__toggle--nojs ~ .main-header__toggle {
     display: none;
