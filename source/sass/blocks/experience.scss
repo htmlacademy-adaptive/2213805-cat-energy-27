@@ -24,8 +24,8 @@
 .experience__list {
   display: flex;
   align-items: center;
-  margin: 0 0 20px 0;
-  justify-content: space-between;
+  margin-top: 41px;
+  justify-content: center;
 }
 
 .experience__item {
@@ -201,6 +201,10 @@
     max-width: none;
     float: right;
   }
+
+  .experience__list {
+    gap: 32px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -316,8 +320,8 @@
   }
 
   .experience__slogan {
-    margin-top: 69px;
-    margin-left: 110px;
+    margin-top: 0;
+    margin-left: 0;
     justify-content: center;
   }
 
@@ -335,14 +339,21 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 598px;
+    margin-left: 110px;
+    margin-bottom: 20px;
   }
 
   .experience__text {
-    margin: 70px 70px 69px 110px;
+    max-width: 433px;
+    margin: 93px 0 30px;
   }
 
   .experience__item {
     width: 162px;
+  }
+
+  .experience__image {
+    margin: 0 110px 0 0;
   }
 
   .experience__item--slim {
@@ -350,21 +361,32 @@
   }
 
   .experience__example {
-    margin-left: 110px;
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
 
+  .experience__list {
+    justify-content: start;
+  }
+
   .experience__expenses {
     display: flex;
-    justify-content: space-between;
     text-align: center;
+    margin-bottom: 20px;
+    margin-top: 41px;
+    align-items: center;
+  }
+
+  .experience__spent {
+    margin-right: 67px;
   }
 
   .experience__amount {
     align-self: center;
-    margin-right: 50px;
+    margin: 0;
   }
 
   .experience__description {
