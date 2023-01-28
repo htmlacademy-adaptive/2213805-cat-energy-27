@@ -201,9 +201,8 @@
     display: flex;
     flex-direction: row;
     margin-left: 110px;
-    margin-right: 110px;
     flex-wrap: wrap;
-    justify-content: normal;
+    justify-content: flex-start;
   }
 
   .advantages__item {
@@ -215,13 +214,15 @@
     background-position: right;
     justify-content: flex-start;
     min-height: 280px;
+    width: 25%;
   }
 
   .advantages__item--nutrition {
     width: 230px;
-    margin-right: 92px;
+    // margin-right: 92px;
     background-image: url("../img/images-tablet/card-one.svg");
-    background-position: top 30px right 20px;
+    background-position: top 30px right 25px;
+    margin-right: 0;
   }
 
   .advantages__item--nutrition::before {
@@ -229,14 +230,14 @@
     height: 80px;
     content: url("../img/images-advantage/advantage-nature-desk.svg");
     position: absolute;
-    top: 30px;
+    top: 23px;
   }
 
   .advantages__item--powder {
     width: 246px;
-    margin-right: 77px;
+    // margin-right: 77px;
     background-image: url("../img/images-tablet/card-two.svg");
-    background-position: top 30px right 20px;
+    background-position: top 30px right 10px;
   }
 
   .advantages__item--powder::before {
@@ -259,12 +260,11 @@
     height: 80px;
     content: url("../img/images-advantage/adv-fork-desk.svg");
     position: absolute;
-    top: 30px;
+    top: 22px;
   }
 
   .advantages__item--result {
     width: 249px;
-    margin-right: 0;
     background-image: url("../img/images-tablet/card-four.svg");
     background-position: top 30px right 20px;
   }
@@ -285,5 +285,9 @@
     margin-bottom: 42px;
     margin-top: 0;
     margin-left: 110px;
+  }
+
+  .advantages__description {
+    padding: 115px 0 20px;
   }
 }
