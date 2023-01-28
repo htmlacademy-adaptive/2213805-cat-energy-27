@@ -205,6 +205,18 @@
   .experience__list {
     gap: 32px;
   }
+
+  .experience__item {
+    display: flex;
+    flex-direction: column;
+    min-height: 56px;
+  }
+
+  .experience__description {
+    padding: 0 5px;
+    margin: 47px 0 0;
+    align-self: center;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -266,9 +278,13 @@
     line-height: 14px;
     background-color: #ffffff;
     padding: 0 7px;
-    margin: 60px 0 0;
+    margin: 67px 0 0;
     white-space: nowrap;
     align-self: center;
+  }
+
+  .experience__description br {
+    display: none;
   }
 
   .experience__example {
