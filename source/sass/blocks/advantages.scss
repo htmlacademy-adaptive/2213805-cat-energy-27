@@ -12,7 +12,6 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
-    margin-bottom: 42px;
     margin-left: 20px;
     margin-top: 20px;
   }
@@ -29,9 +28,6 @@
   }
 
   .advantages__item {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
     position: relative;
@@ -40,12 +36,18 @@
     padding-right: 3px;
   }
 
+  .advantages__description {
+    margin: 0;
+    padding-top: 7px;
+  }
+
   .advantages__item--nutrition::before {
     width: 60px;
     height: 60px;
     content: url("../img/images-advantage/advantage-natural.svg");
     position: absolute;
     left: -80px;
+    top: 5px;
   }
 
   .advantages__item--powder::before {
@@ -54,6 +56,7 @@
     content: url("../img/images-advantage/advantage-powder.svg");
     position: absolute;
     left: -80px;
+    top: 5px;
   }
 
   .advantages__item--economy::before {
@@ -62,6 +65,7 @@
     content: url("../img/images-advantage/advantage-fork.svg");
     position: absolute;
     left: -80px;
+    top: 5px;
   }
 
   .advantages__item--result::before {
@@ -70,12 +74,13 @@
     content: url("../img/images-advantage/advantage-result.svg");
     position: absolute;
     left: -80px;
+    top: 5px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
-    margin-top: 45px;
+    margin-top: 55px;
   }
 
   .advantages__wrapper {
@@ -112,7 +117,7 @@
 
   .advantages__item--nutrition {
     width: 230px;
-    margin-right: 97px;
+    margin-right: 155px;
     background-image: url("../img/images-tablet/card-one.svg");
     background-position: top 30px right 20px;
   }
@@ -142,7 +147,7 @@
 
   .advantages__item--economy {
     width: 247px;
-    margin-right: 77px;
+    margin-right: 134px;
     background-position: top 30px right 20px;
     background-image: url("../img/images-tablet/card-three.svg");
   }
@@ -175,7 +180,7 @@
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 42px;
+    margin-bottom: 32px;
     margin-top: 0;
     margin-left: 30px;
   }

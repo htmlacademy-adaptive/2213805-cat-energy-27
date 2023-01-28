@@ -151,14 +151,25 @@
   }
 
   .options__program-title {
-    margin-top: 77px;
+    margin-top: 87px;
     margin-left: 53px;
+    margin-bottom: 25px;
   }
 
   .options__program-description {
+    font-size: 16px;
+    line-height: 24px;
     margin: 0 280px 48px 52px;
     padding: 0;
     padding-right: 40px;
+  }
+
+  .options__program-description br {
+    display: none;
+  }
+
+  .options__program-choice::after {
+    margin-left: 25px;
   }
 
   .options__program-item--slim {
@@ -168,15 +179,15 @@
   .options__program-item--slim::before {
     content: url("../img/images-tablet/slim-tab.svg");
     position: absolute;
-    top: 65px;
-    left: 400px;
+    top: 85px;
+    left: 445px;
   }
 
   .options__program-item--gain::before {
     content: url("../img/images-tablet/gain-tab.svg");
     position: absolute;
-    top: 75px;
-    right: 60px;
+    top: 100px;
+    right: 30px;
   }
 
   .options__program-choice {
