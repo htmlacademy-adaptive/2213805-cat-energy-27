@@ -220,9 +220,10 @@
     outline: 2px solid #f2f2f2;
     min-height: 429px;
     margin-top: 150px;
+    background: none;
   }
 
-  .catalog-card {
+  .catalog-card--main {
     background: linear-gradient(
       to top,
       #f2f2f2 430px,
@@ -254,6 +255,9 @@
   .catalog-card--more {
     min-height: 431px;
     margin-top: 150px;
+    background-color: #ffffff;
+    color: #000000;
+    outline: 2px solid #f2f2f2;
   }
 
   .catalog-card__name {
@@ -281,7 +285,7 @@
   }
 
   .catalog-card__title--add::before {
-    content: url("img/images-catalog/plus-desktop.svg");
+    content: url("../img/images-catalog/plus-desktop.svg");
     order: 1;
     position: absolute;
     top: -100px;
