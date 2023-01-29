@@ -118,7 +118,7 @@
   }
 
   .application-form__text-radiobutton {
-    margin-left: 15px;
+    margin-left: 10px;
 
     &:hover {
       color: #222222;
@@ -227,8 +227,16 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .application-form__wrapper--cat {
+    margin-top: 37px;
+  }
+
   .application-form__input {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
+  }
+
+  .application-form__label {
+    margin-right: 13px;
   }
 
   .application-form__group {
@@ -238,6 +246,10 @@
     justify-content: center;
   }
 
+  .application-form__group--cat {
+    margin-bottom: 10px;
+  }
+
   .application-form__wrapper--options {
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
@@ -245,6 +257,7 @@
 
   .application-form__group-list--radiobutton {
     padding: 0;
+    margin-top: 30px;
   }
 
   .application-form__radiobutton {
@@ -262,7 +275,7 @@
   }
 
   .application-form__input--email {
-    margin: 35px 20px 14px 0;
+    margin: 30px 20px 10px 0;
   }
 
   .application-form__input--phone {
@@ -276,11 +289,13 @@
 
   .application-form__title {
     position: absolute;
-    top: -10px;
-    left: 39px;
+    top: -15px;
+    left: 10px
     background-color: #ffffff;
     padding: 0 11px;
     text-transform: none;
+    font-size: 24px;
+    line-height: 26px;
   }
 
   .application-form__input--comments {
@@ -324,6 +339,7 @@
 
   .application-form__part {
     width: auto;
+    margin-bottom: 37px;
   }
 }
 
