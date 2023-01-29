@@ -42,23 +42,23 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 82px 30px 65px 30px;
+    margin: 82px 30px 33px;
   }
 
   .catalog__card {
     width: 324px;
     min-height: 488px;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .catalog__card:nth-child(odd) {
     margin-right: 60px;
   }
 
-  .catalog__wrapper {
-    padding-top: 70px;
-  }
+  // .catalog__wrapper {
+  //   padding-top: 70px;
+  // }
 }
 
 @media (min-width: $desktop-width) {

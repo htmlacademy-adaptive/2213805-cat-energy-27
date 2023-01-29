@@ -40,7 +40,7 @@
   margin: 8px 20px 14px 20px;
 }
 
-.additional__list .additional__card__button {
+.additional__list .additional-card__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,8 +113,8 @@
   .additional__title {
     position: absolute;
     background-color: #ffffff;
-    top: -45px;
-    left: 0;
+    top: -50px;
+    left: 25px;
     padding-left: 40px;
     padding-right: 35px;
   }
@@ -134,6 +134,7 @@
     color: #ffffff;
     text-decoration: none;
     margin-bottom: 14px;
+    margin-top: 15px;
     width: 632px;
   }
 
@@ -143,19 +144,19 @@
   }
 
   .additional__wrapper {
-    margin-top: 81px;
+    margin-top: 90px;
   }
 
   .additional__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 30px 69px 30px;
+    margin: 0 30px 10px;
   }
 
   .additional__card {
     display: flex;
     flex-direction: row;
-    padding: 26px 38px 28px 38px;
+    padding: 24px 38px 20px;
     margin: 0;
     border: 1px solid #ebebeb;
   }
