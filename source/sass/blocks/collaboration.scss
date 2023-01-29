@@ -70,7 +70,6 @@
 
   .collaboration__address {
     display: flex;
-    padding: 0;
     margin: 30px 0 20px 0;
     width: 50%;
     text-align: start;
@@ -92,7 +91,7 @@
     margin: 0;
     padding-left: 80px;
     padding-right: 100px;
-    padding-top: 75px;
+    padding-top: 0;
 
     & br {
       display: none;
@@ -106,7 +105,7 @@
     z-index: 2;
     background-color: #ffffff;
     width: 565px;
-    margin-top: 95px;
+    margin-top: 90px;
     margin-left: 110px;
   }
 
@@ -115,7 +114,7 @@
     display: flex;
     width: 80%;
     justify-content: flex-end;
-    padding: 92px 55px 30px 0;
+    padding: 60px 55px 30px 0;
     text-align: start;
   }
 }

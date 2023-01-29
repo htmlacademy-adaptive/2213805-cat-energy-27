@@ -26,6 +26,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .program__text {
@@ -69,15 +70,12 @@
 
 @media (min-width: $desktop-width) {
   .program__title {
-    text-align: center;
-    margin-top: 65px;
-    margin-left: 69px;
+    margin-top: 80px;
+    margin-left: 110px
   }
 
   .program__text {
-    margin-top: 56px;
-    margin-right: 1007px;
-    margin-bottom: 56px;
+    margin: 55px 1000px 60px 110px;
   }
 
   .program__content {
