@@ -122,11 +122,11 @@
   position: absolute;
   left: calc(50% - 20px);
 
-  &:hover {
+  &:hover .experience__slider--part {
     fill: #68b738;
   }
 
-  &:active {
+  &:active .experience__slider--part {
     fill: #5eaa2f;
     opacity: 0.6;
   }

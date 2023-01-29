@@ -7,7 +7,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
+}
+
+.catalog__list {
+  align-items: flex-start;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -27,6 +31,10 @@
     width: 280px;
     min-height: 190px;
   }
+
+  .catalog__wrapper {
+    margin-bottom: 32px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -39,13 +47,17 @@
 
   .catalog__card {
     width: 324px;
-    min-height: 511px;
+    min-height: 488px;
     padding: 0;
     margin-bottom: 60px;
   }
 
   .catalog__card:nth-child(odd) {
     margin-right: 60px;
+  }
+
+  .catalog__wrapper {
+    padding-top: 70px;
   }
 }
 
@@ -57,7 +69,7 @@
 
   .catalog__card {
     width: 245px;
-    margin-bottom: 63px;
+    margin-bottom: 89px;
     margin-right: 80px;
   }
 

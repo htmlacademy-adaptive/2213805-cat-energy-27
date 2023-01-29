@@ -70,6 +70,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: -10px;
 }
 
 .catalog-card__title--add {
@@ -101,13 +102,25 @@
 @media (max-width: $mobile-width-only) {
   .catalog-card__information {
     display: flex;
-    margin: 19px 0 13px 0;
+    margin: 19px 0 20px 0;
+  }
+
+  .catalog-card__information--big {
+    margin: 19px 0 12px;
+  }
+
+  .catalog-card__link .catalog-card__information--big {
+    margin-right: 28px;
   }
 
   .catalog-card__name {
     padding-right: 64px;
     margin-top: 11px;
     text-align: start;
+  }
+
+  .catalog-card__title--add {
+    margin-top: 80px;
   }
 
   .catalog-card__name--add {
@@ -126,23 +139,30 @@
   }
 
   .catalog-card__link {
-    padding: 14px 36px 12px 36px;
+    // padding: 14px 36px 12px 36px;
+    margin-left: 37px;
+    margin-top: 10px;
+    flex-shrink: 0;
+    margin-right: 33px;
   }
 
   .catalog-card__link--big {
-    padding: 11px 28px 1px 28px;
+    margin-left: 28px;
+    margin-top: 10px;
+    flex-shrink: 0;
+    margin-right: 28px;
   }
 
   .catalog-card__button {
     width: 280px;
-    margin-bottom: 14px;
+    margin-bottom: 25px;
   }
 
   .catalog-card__title--add::before {
     content: url("../img/images-mobile/plus.svg");
-    order: 1;
+    // order: 1;
     position: absolute;
-    top: -60px;
+    top: -55px;
   }
 }
 
@@ -225,9 +245,9 @@
 
   .catalog-card--main {
     background: linear-gradient(
-      to top,
-      #f2f2f2 430px,
-      #ffffff 81px
+      to bottom,
+      #ffffff 55px,
+      #f2f2f2 55px
       );
   }
 
