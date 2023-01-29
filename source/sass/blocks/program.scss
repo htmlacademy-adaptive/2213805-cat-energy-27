@@ -71,10 +71,9 @@
 
 @media (min-width: $desktop-width) {
   .program__title {
-    margin-top: 73px;
-    margin-right: 110px;
-    display: flex;
-    text-align: center;
+    text-align:start;
+    margin-top: 10px;
+    margin-left: 70px;
   }
 
   .program__text {
