@@ -178,6 +178,7 @@
 
   .additional__list .button--green {
     width: 244px;
+    margin-bottom: 0;
   }
 
   .additional__products {
@@ -217,9 +218,5 @@
   .additional-card__wrapper {
     margin-right: 40px;
     justify-content: space-between;
-  }
-
-  .additional__list .button--green {
-    margin-bottom: 0;
   }
 }

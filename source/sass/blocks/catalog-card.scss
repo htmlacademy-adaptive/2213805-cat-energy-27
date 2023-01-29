@@ -186,6 +186,9 @@
   .catalog-card__item {
     font-size: 16px;
     line-height: 16px;
+    width: 246px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 7px 0 9px 0;
   }
 
   .catalog-card__name--add {
@@ -233,12 +236,6 @@
     height: auto;
   }
 
-  .catalog-card__item {
-    width: 246px;
-    border-bottom: 1px solid #cdcdcd;
-    padding: 7px 0 9px 0;
-  }
-
   .catalog-card__button {
     width: 248px;
     display: flex;
@@ -251,8 +248,7 @@
     color: #000000;
     outline: 2px solid #f2f2f2;
     min-height: 429px;
-    // margin-top: 90px;
-    background: none;
+    // background: none;
   }
 
   .catalog-card--main {
@@ -274,6 +270,7 @@
   .catalog-card__information {
     margin: 0;
   }
+
   .catalog-card__button {
     width: 168px;
     margin-bottom: 40px;

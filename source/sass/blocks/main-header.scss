@@ -39,8 +39,6 @@
     flex-direction: row;
   }
 
-//одинаковые стили с js и без ниже если доб main-header__toggle--nojs в 36 стр?
-
   .main-header__toggle {
     position: relative;
     padding: 0;
@@ -66,15 +64,6 @@
   .main-header__toggle.active {
     background: url("../img/images-mobile/close-icon.svg") center no-repeat;
   }
-
-}
-
-.main-header__logo:hover {
-  opacity: 0.8;
-}
-
-.main-header__logo:active {
-  opacity: 0.6;
 }
 
 @media (min-width: $tablet-width) {
