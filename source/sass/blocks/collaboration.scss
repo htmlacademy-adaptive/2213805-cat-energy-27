@@ -27,6 +27,7 @@
 
   .collaboration__wrapper {
     align-items: center;
+    margin-bottom: 10px;
   }
 
   .collaboration__slogan {
@@ -35,7 +36,7 @@
     width: 50%;
     text-align: start;
     box-sizing: border-box;
-    margin: 30px 0 20px 0;
+    margin: 20px 0 20px;
     padding-left: 20px;
   }
 
@@ -46,7 +47,7 @@
     font-weight: 400;
     display: flex;
     padding: 0;
-    margin: 26px 0 20px;
+    margin: 20px 0 20px;
     width: 50%;
     text-align: start;
     box-sizing: border-box;
@@ -56,26 +57,27 @@
 @media (min-width: $tablet-width) {
   .collaboration__wrapper {
     justify-content: space-between;
+    margin-bottom: 35px;
   }
 
   .collaboration__slogan {
     // margin: 56px 100px 56px 70px;
     text-align: start;
     box-sizing: border-box;
-    margin: 30px 0 20px 0;
+    margin: 40px 0 0;
     padding-left: 70px;
     padding-right: 200px;
-    padding-top: 30px;
+    padding-top: 10px;
   }
 
   .collaboration__address {
     display: flex;
-    margin: 30px 0 20px 0;
+    margin: 40px 0 0;
     width: 50%;
     text-align: start;
     box-sizing: border-box;
     justify-content: flex-end;
-    padding: 25px 67px 30px 80px;
+    padding: 5px 67px 30px 80px;
     text-align: end;
   }
 }

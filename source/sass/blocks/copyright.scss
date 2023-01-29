@@ -2,12 +2,13 @@
   display: flex;
   text-decoration: none;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-family: "lato", "Arial", sans-serif;
   line-height: 19px;
   font-size: 16px;
   color: #444444;
   white-space: nowrap;
+  width: 100%;
 }
 
 // .copyright__link:hover {

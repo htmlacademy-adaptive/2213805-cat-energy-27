@@ -50,6 +50,7 @@
     text-align: center;
     color: #ffffff;
     margin-bottom: 20px;
+    margin-top: 28px;
   }
 
   .promotion__slogan {
@@ -73,11 +74,11 @@
   }
 
   .promotion__wrapper {
-    background-image: url("/img/images-mobile/cat-index.png");
+    background-image: url("../img/images-mobile/cat-index.png");
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/images-mobile/cat-index-mobile@2x.png");
+      background-image: url("../img/images-mobile/cat-index-mobile@2x.png");
     }
   }
 
@@ -93,7 +94,7 @@
 
   .promotion__image {
     margin-left: 20px;
-    margin-top: -10px;
+    margin-top: -40px;
   }
 
   .promotion__product {
@@ -127,7 +128,7 @@
     width: 709px;
     height: auto;
     margin-top: -20px;
-    margin-left: 80px;
+    margin-left: 70px;
     order: 1;
   }
 
