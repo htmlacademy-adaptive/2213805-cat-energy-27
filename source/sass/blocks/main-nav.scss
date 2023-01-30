@@ -15,7 +15,7 @@
   line-height: 20px;
   font-weight: 500;
   margin: 0 auto;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-decoration: none;
   justify-content: center;
 }
@@ -95,7 +95,7 @@
   }
 
   .main-nav--nojs .site-list__item {
-    display: block;
+    display: flex;
   }
 
   .main-nav--nojs .site-list__item--active a {
@@ -114,7 +114,7 @@
     margin: 0 auto;
     padding-top: 22px;
     padding-bottom: 24px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-decoration: none;
     justify-content: center;
   }
