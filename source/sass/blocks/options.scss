@@ -61,7 +61,7 @@
 .options__program-choice::after {
   width: 32px;
   height: 10px;
-  content: url("/img/images-mobile/arrow.svg");
+  content: url("../img/images-mobile/arrow.svg");
   margin-left: 15px;
 }
 
@@ -101,7 +101,7 @@
   }
 
   .options__program-item--slim::before {
-    content: url("/img/images-mobile/option-slim.svg");
+    content: url("../img/images-mobile/option-slim.svg");
     position: absolute;
     top: 21px;
     left: 22px;
@@ -114,7 +114,7 @@
   }
 
   .options__program-item--gain::before {
-    content: url("/img/images-mobile/option-gain.svg");
+    content: url("../img/images-mobile/option-gain.svg");
     position: absolute;
     top: 24px;
     left: 13px;
@@ -151,14 +151,25 @@
   }
 
   .options__program-title {
-    margin-top: 77px;
+    margin-top: 87px;
     margin-left: 53px;
+    margin-bottom: 25px;
   }
 
   .options__program-description {
+    font-size: 16px;
+    line-height: 24px;
     margin: 0 280px 48px 52px;
     padding: 0;
     padding-right: 40px;
+  }
+
+  .options__program-description br {
+    display: none;
+  }
+
+  .options__program-choice::after {
+    margin-left: 25px;
   }
 
   .options__program-item--slim {
@@ -166,17 +177,17 @@
   }
 
   .options__program-item--slim::before {
-    content: url("/img/images-tablet/slim-tab.svg");
+    content: url("../img/images-tablet/slim-tab.svg");
     position: absolute;
-    top: 65px;
-    left: 400px;
+    top: 85px;
+    left: 445px;
   }
 
   .options__program-item--gain::before {
-    content: url("/img/images-tablet/gain-tab.svg");
+    content: url("../img/images-tablet/gain-tab.svg");
     position: absolute;
-    top: 75px;
-    right: 60px;
+    top: 100px;
+    right: 30px;
   }
 
   .options__program-choice {
@@ -188,7 +199,7 @@
 
 @media (min-width: $desktop-width) {
   .options {
-    margin-top: 260px;
+    margin-top: 150px;
   }
 
   .options__program {
@@ -196,8 +207,8 @@
   }
 
   .options__program-title {
-    margin-top: 77px;
-    margin-left: 180px;
+    margin-top: 80px;
+    margin-left: 215px;
   }
 
   .options__program-description {
@@ -223,20 +234,20 @@
   }
 
   .options__program-item--slim::before {
-    content: url("/img/images-desktop/slim-desktop.svg");
+    content: url("../img/images-desktop/slim-desktop.svg");
     position: absolute;
-    top: 35px;
+    top: 45px;
     left: 45px;
   }
 
   .options__program-item--gain::before {
-    content: url("/img/images-desktop/gain-desktop.svg");
+    content: url("../img/images-desktop/gain-desktop.svg");
     position: absolute;
-    top: 35px;
-    right: 420px;
+    top: 52px;
+    right: 410px;
   }
 
   .options__program-choice {
-    margin-top: 23px;
+    margin-top: 27px;
   }
 }

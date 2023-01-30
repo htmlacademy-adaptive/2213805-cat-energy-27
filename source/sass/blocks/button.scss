@@ -1,0 +1,34 @@
+.button--green {
+  background-color: #68b738;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.3;
+  }
+}
+
+.button--gray {
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    opacity: 0.3;
+  }
+}
+
+.button--more {
+  background-color: #f2f2f2;
+  color: #000000;
+  order: 4;
+}

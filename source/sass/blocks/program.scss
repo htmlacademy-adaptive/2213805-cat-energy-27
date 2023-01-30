@@ -25,6 +25,7 @@
   .program__title {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 40px;
   }
 
   .program__text {
@@ -52,15 +53,13 @@
   }
 
   .program__title {
-    text-align: center;
-    margin-top: 65px;
-    margin-left: 69px;
+    text-align: start;
+    margin-top: 10px;
+    margin-left: 70px;
   }
 
   .program__text {
-    margin-top: 54px;
-    margin-left: 70px;
-    margin-right: 375px;
+    margin: 54px 375px 65px 70px;
   }
 
   .program__content {
@@ -70,16 +69,12 @@
 
 @media (min-width: $desktop-width) {
   .program__title {
-    margin-top: 73px;
-    margin-right: 110px;
-    display: flex;
-    text-align: center;
+    margin-top: 80px;
+    margin-left: 110px;
   }
 
   .program__text {
-    margin-top: 56px;
-    margin-right: 1007px;
-    margin-bottom: 56px;
+    margin: 55px 1000px 60px 110px;
   }
 
   .program__content {

@@ -13,8 +13,10 @@
   width: 191px;
   margin-right: 65px;
   border: none;
-  background-image: url("/img/images-mobile/mobile-logo.svg");
+  background-image: url("../img/images-mobile/mobile-logo.svg");
   background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-bottom: 18px;
 
   &:hover {
     opacity: 0.8;
@@ -28,20 +30,26 @@
 @media (max-width: $mobile-width-only) {
   .main-header {
     position: relative;
-    height: 65px;
+    // height: 65px;
+    flex-direction: column;
+  }
+
+  .main-header__wrapper {
+    display: flex;
+    flex-direction: row;
   }
 
   .main-header__toggle {
     position: relative;
     padding: 0;
-    top: 0;
+    top: 7px;
     right: 0;
     width: 24px;
     height: 22px;
     cursor: pointer;
     justify-self: end;
     border: none;
-    background: url("/img/images-mobile/toggle-icon.svg") center no-repeat;
+    background: url("../img/images-mobile/toggle-icon.svg") center no-repeat;
     background-color: transparent;
   }
 
@@ -49,18 +57,13 @@
     display: none;
   }
 
-  .main-header__toggle.active {
-    background: url("/img/images-mobile/close-icon.svg") center no-repeat;
+  .main-header__toggle--nojs ~ .main-header__toggle {
+    display: none;
   }
 
-}
-
-.main-header__logo:hover {
-  opacity: 0.8;
-}
-
-.main-header__logo:active {
-  opacity: 0.6;
+  .main-header__toggle.active {
+    background: url("../img/images-mobile/close-icon.svg") center no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -70,6 +73,10 @@
     height: 105px;
   }
 
+  .main-header__wrapper {
+    display: flex;
+  }
+
   .main-header__toggle {
     display: none;
   }
@@ -77,8 +84,10 @@
   .main-header__logo {
     height: 51px;
     width: 174px;
-    background-image: url("/img/images-tablet/logo-tablet.svg");
+    background-image: url("../img/images-tablet/logo-tablet.svg");
     background-repeat: no-repeat;
+    margin-right: 90px;
+    margin-left: 5px;
   }
 }
 
@@ -98,9 +107,10 @@
   .main-header__logo {
     height: 59px;
     width: 202px;
-    background-image: url("/img/images-desktop/logo-desktop.svg");
+    background-image: url("../img/images-desktop/logo-desktop.svg");
     background-repeat: no-repeat;
-    margin-top: 53px;
+    margin-top: 70px;
     margin-right: 540px;
+    margin-left: 0;
   }
 }
