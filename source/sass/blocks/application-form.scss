@@ -233,6 +233,26 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .application-form__field {
+    padding-left: 10px;
+  }
+
+  .application-form__field .application-form__input--email {
+    content: url("../img/images-mobile/email-stroke.svg");
+    position: absolute;
+    top: 10px;
+    right: 80px;
+  }
+
+  .application-form__field .application-form__input--email {
+    content: url("../img/images-mobile/phone-stroke.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+  }
+
   .application-form__radiobutton .application-form__text-radiobutton {
     margin-left: 10px;
   }
@@ -290,10 +310,12 @@
 
   .application-form__input--email {
     margin: 30px 20px 10px 0;
+    position: relative;
   }
 
   .application-form__input--phone {
     margin: 0 20px 20px 0;
+    position: relative;
   }
 
   .application-form__wrapper--comments {
