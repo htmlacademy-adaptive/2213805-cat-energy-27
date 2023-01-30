@@ -62,6 +62,12 @@
   .collaboration__wrapper {
     justify-content: space-between;
     margin-bottom: 35px;
+    margin-top: 15px;
+  }
+
+  .collaboration__city {
+    display: block;
+    margin-top: 20px;
   }
 
   .collaboration__slogan {
@@ -90,6 +96,11 @@
     position: relative;
   }
 
+  .collaboration__city {
+    display: block;
+    margin-top: 20px;
+  }
+
   .collaboration__slogan {
     display: flex;
     align-self: center;
@@ -112,6 +123,7 @@
     width: 565px;
     margin-top: 90px;
     margin-left: 110px;
+    margin-top: 105px;
   }
 
   .collaboration__address {
