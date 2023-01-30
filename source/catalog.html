@@ -397,8 +397,8 @@
       <h2 class="collaboration__title visually-hidden">Давайте сотрудничать.</h2>
       <div class="collaboration__data container">
         <div class="collaboration__wrapper container">
-          <p class="collaboration__slogan"><span>приглашаем к сотрудничеству дилеров!</span></p>
-          <p class="collaboration__address"><span>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span></p>
+          <p class="collaboration__slogan"><span>приглашаем <br> к&nbsp;сотрудничеству дилеров!</span></p>
+          <p class="collaboration__address"><span>ул. Большая Конюшенная, д. 19/8 <br><span class="collaboration__city">Санкт-Петербург</span></span></p>
         </div>
       </div>
       <div class="map">
@@ -411,7 +411,10 @@
     </section>
     <div class="footer__part container">
       <div class="footer__logo">
-        <img class="footer__image" src="img/images-mobile/footer-mobile.svg" width="128" height="24" alt="Наш логотип.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/images-tablet/footer-logo-tablet.svg">
+          <img class="footer__image" src="img/images-mobile/footer-mobile.svg" width="128" height="24" alt="Наш логотип.">
+        </picture>
       </div>
       <div class="footer__social social">
         <ul class="social__list">
@@ -450,7 +453,7 @@
         </a>
       </div>
     </div>
-  </footer> -->
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>

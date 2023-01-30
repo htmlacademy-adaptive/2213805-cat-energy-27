@@ -30,6 +30,10 @@
     margin-bottom: 10px;
   }
 
+  .collaboration__data {
+    margin-top: 10px;
+  }
+
   .collaboration__slogan {
     font-size: 16px;
     line-height: 20px;
@@ -57,7 +61,13 @@
 @media (min-width: $tablet-width) {
   .collaboration__wrapper {
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 65px;
+    margin-top: 15px;
+  }
+
+  .collaboration__city {
+    display: block;
+    margin-top: 20px;
   }
 
   .collaboration__slogan {
@@ -76,7 +86,7 @@
     width: 50%;
     box-sizing: border-box;
     justify-content: flex-end;
-    padding: 5px 67px 30px 80px;
+    padding: 5px 67px 10px 60px;
     text-align: end;
   }
 }
@@ -84,6 +94,11 @@
 @media (min-width: $desktop-width) {
   .collaboration__data {
     position: relative;
+  }
+
+  .collaboration__city {
+    display: block;
+    margin-top: 20px;
   }
 
   .collaboration__slogan {

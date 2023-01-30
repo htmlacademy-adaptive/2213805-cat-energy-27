@@ -127,7 +127,7 @@
     line-height: 16px;
     margin-bottom: 18px;
     margin-left: 19px;
-    padding: 4px 15px 4px 0;
+    padding: 5px 15px 4px 2px;
     justify-content: flex-start;
     color: #444444;
   }
@@ -136,6 +136,10 @@
 @media (min-width: $tablet-width) {
   .options {
     margin-top: 0;
+  }
+
+  .options__program {
+    margin-top: -16px;
   }
 
   .options__program-item {
@@ -159,7 +163,7 @@
   .options__program-description {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 280px 48px 52px;
+    margin: 0 280px 52px 52px;
     padding: 0;
     padding-right: 40px;
   }
@@ -170,6 +174,7 @@
 
   .options__program-choice::after {
     margin-left: 25px;
+    margin-top: -6px;
   }
 
   .options__program-item--slim {
@@ -179,15 +184,15 @@
   .options__program-item--slim::before {
     content: url("../img/images-tablet/slim-tab.svg");
     position: absolute;
-    top: 85px;
-    left: 445px;
+    top: 92px;
+    right: 60px;
   }
 
   .options__program-item--gain::before {
     content: url("../img/images-tablet/gain-tab.svg");
     position: absolute;
     top: 100px;
-    right: 30px;
+    right: 28px;
   }
 
   .options__program-choice {
@@ -237,14 +242,14 @@
     content: url("../img/images-desktop/slim-desktop.svg");
     position: absolute;
     top: 45px;
-    left: 45px;
+    right: 420px;
   }
 
   .options__program-item--gain::before {
     content: url("../img/images-desktop/gain-desktop.svg");
     position: absolute;
-    top: 52px;
-    right: 410px;
+    top: 50px;
+    right: 405px;
   }
 
   .options__program-choice {
