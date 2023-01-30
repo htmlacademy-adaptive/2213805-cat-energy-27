@@ -242,14 +242,14 @@
     content: url("../img/images-desktop/slim-desktop.svg");
     position: absolute;
     top: 45px;
-    left: 420px;
+    right: 420px;
   }
 
   .options__program-item--gain::before {
     content: url("../img/images-desktop/gain-desktop.svg");
     position: absolute;
     top: 50px;
-    right: 405px
+    right: 405px;
   }
 
   .options__program-choice {
