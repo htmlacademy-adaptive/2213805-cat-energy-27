@@ -149,7 +149,16 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: #68b738;
+    background-color: #68b738;
+
+    // &:hover {
+    //   background-color: #68b738;
+    // }
+
+    // &:disabled {
+    //   background-color: #68b738;
+    //   opacity: 0.3;
+    // }
   }
 }
 
@@ -214,10 +223,7 @@
       height: 57%;
       border: solid #68b738;
       border-width: 0 3px 3px 0;
-      // -webkit-transform: rotate(45deg);
-      // -ms-transform: rotate(45deg);
       transform: rotate(45deg);
-      // background: url("../../img/images-tablet/checkbox-checked.svg");
     }
   }
 
@@ -227,8 +233,12 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .application-form__radiobutton .application-form__text-radiobutton {
+    margin-left: 10px;
+  }
+
   .application-form__wrapper--cat {
-    margin-top: 37px;
+    margin-top: 33px;
   }
 
   .application-form__input {
@@ -240,15 +250,16 @@
   }
 
   .application-form__group {
-    padding-left: 20px;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     // margin-bottom: 19px;
+    margin-left: 20px;
   }
 
   .application-form__group--cat {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .application-form__wrapper--options {
@@ -274,7 +285,7 @@
   }
 
   .application-form__owner--part {
-    margin-top: 36px;
+    margin-top: 40px;
   }
 
   .application-form__input--email {
@@ -293,7 +304,7 @@
   .application-form__title {
     position: absolute;
     top: -20px;
-    left: 10px;
+    left: -10px;
     background-color: #ffffff;
     padding: 0 11px;
     text-transform: none;
@@ -302,7 +313,7 @@
   }
 
   .application-form__input--comments {
-    margin: 47px 20px 33px 0;
+    margin: 47px 0 33px 0;
     width: 280px;
     min-height: 150px;
     display: flex;
@@ -319,7 +330,29 @@
   .application-form__checkbox {
     display: flex;
     height: 30px;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
+
+    .application-form__checkmark {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      height: 30px;
+      width: 30px;
+      border: 1px solid #cdcdcd;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: -1px;
+        left: 12px;
+        width: 33%;
+        height: 57%;
+        border: solid #68b738;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }
+    }
   }
 
   .application-form__wrapper--additional {
@@ -330,7 +363,6 @@
   .application-form__group-list--checkbox {
     padding: 0;
     margin-top: 50px;
-    // margin-left: 20px;
   }
 
   .application-form__button {
@@ -354,6 +386,11 @@
 
   .application-form__notes {
     text-align: center;
+  }
+
+  .application-form__text-checkbox {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 

@@ -25,11 +25,12 @@
     padding: 0;
     margin-right: 20px;
     margin-left: 20px;
+    margin-top: 30px;
   }
 
   .advantages__item {
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     position: relative;
     margin-left: 80px;
     min-height: 60px;
@@ -38,7 +39,7 @@
 
   .advantages__description {
     margin: 0;
-    padding-top: 7px;
+    padding-top: 10px;
   }
 
   .advantages__item--nutrition::before {
@@ -47,7 +48,7 @@
     content: url("../img/images-advantage/advantage-natural.svg");
     position: absolute;
     left: -80px;
-    top: 5px;
+    top: 9px;
   }
 
   .advantages__item--powder::before {
@@ -56,7 +57,7 @@
     content: url("../img/images-advantage/advantage-powder.svg");
     position: absolute;
     left: -80px;
-    top: 5px;
+    top: 9px;
   }
 
   .advantages__item--economy::before {
@@ -65,7 +66,7 @@
     content: url("../img/images-advantage/advantage-fork.svg");
     position: absolute;
     left: -80px;
-    top: 5px;
+    top: 9px;
   }
 
   .advantages__item--result::before {
@@ -74,7 +75,7 @@
     content: url("../img/images-advantage/advantage-result.svg");
     position: absolute;
     left: -80px;
-    top: 5px;
+    top: 9px;
   }
 }
 
@@ -119,7 +120,7 @@
     width: 230px;
     margin-right: 155px;
     background-image: url("../img/images-tablet/card-one.svg");
-    background-position: top 30px right 20px;
+    background-position: top 30px right 25px;
   }
 
   .advantages__item--nutrition::before {
@@ -127,7 +128,7 @@
     height: 80px;
     content: url("../img/images-advantage/advantage-nature-desk.svg");
     position: absolute;
-    top: 30px;
+    top: 28px;
   }
 
   .advantages__item--powder {
@@ -147,8 +148,8 @@
 
   .advantages__item--economy {
     width: 247px;
-    margin-right: 134px;
-    background-position: top 30px right 20px;
+    margin-right: 136px;
+    background-position: top 30px right 10px;
     background-image: url("../img/images-tablet/card-three.svg");
   }
 
@@ -229,7 +230,7 @@
     height: 80px;
     content: url("../img/images-advantage/advantage-nature-desk.svg");
     position: absolute;
-    top: 23px;
+    top: 18px;
   }
 
   .advantages__item--powder {
@@ -244,7 +245,7 @@
     height: 80px;
     content: url("../img/images-advantage/adv-powder-desk.svg");
     position: absolute;
-    top: 30px;
+    top: 18px;
   }
 
   .advantages__item--economy {
@@ -259,7 +260,7 @@
     height: 80px;
     content: url("../img/images-advantage/adv-fork-desk.svg");
     position: absolute;
-    top: 22px;
+    top: 18px;
   }
 
   .advantages__item--result {
@@ -274,7 +275,7 @@
     height: 80px;
     content: url("../img/images-advantage/adv-result-desk.svg");
     position: absolute;
-    top: 30px;
+    top: 18px;
   }
 
   .advantages__title {

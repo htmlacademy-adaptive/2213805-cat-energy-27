@@ -16,10 +16,10 @@
 
 @media (min-width: $desktop-width) {
   .page__body--image::before {
-    background-image: url("../img/images-desktop/cat-index-desktop.png");
+    background-image: url("../img/images-desktop/index-cat-desk.png");
     background-color: #68b738;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 50%;
     position: absolute;
     bottom: 0;

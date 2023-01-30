@@ -163,11 +163,11 @@ content="width=device-width, initial-scale=1">
               </picture>
             </div>
             <svg class="experience__slider" width="40" height="512" viewBox="0 0 40 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="18" width="4" height="512" rx="2" fill="#666666"/>
+              <rect class="experience__slide" x="18" width="4" height="512" rx="2" fill="#666666"/>
               <rect x="1" y="237" width="38" height="38" rx="19" fill="white"/>
               <path class="experience__slide" d="M16 247L8 256L16 265V247Z" fill="#666666"/>
               <path class="experience__slide" d="M32 256L24 247V265L32 256Z" fill="#666666"/>
-              <rect x="1" y="237" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+              <rect class="experience__round" x="1" y="237" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
             </svg>
           </div>
         </div>
@@ -180,7 +180,7 @@ content="width=device-width, initial-scale=1">
       <div class="collaboration__data container">
         <div class="collaboration__wrapper container">
           <p class="collaboration__slogan"><span>приглашаем <br>к сотрудничеству дилеров!</span></p>
-          <p class="collaboration__address"><span>ул. Большая Конюшенная, д. 19/8 <br>Санкт-Петербург</span></p>
+          <p class="collaboration__address"><span>ул. Большая Конюшенная, д. 19/8 <br><span>Санкт-Петербург</span></span></p>
         </div>
       </div>
       <div class="map">
@@ -193,7 +193,10 @@ content="width=device-width, initial-scale=1">
     </section>
     <div class="footer__part container">
       <div class="footer__logo">
-        <img class="footer__image" src="img/images-mobile/footer-mobile.svg" width="128" height="24" alt="Наш логотип.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/images-tablet/footer-logo-tablet.svg">
+          <img class="footer__image" src="img/images-mobile/footer-mobile.svg" width="128" height="24" alt="Наш логотип.">
+        </picture>
       </div>
       <div class="footer__social social">
         <ul class="social__list">
